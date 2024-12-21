@@ -14,7 +14,7 @@ const port = process.env.PORT || 8080;
 
 // sendFile will go here
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/index.html'));
+  res.sendFile(path.join(__dirname, '/𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿.html'));
 });
 
 app.listen(port);
@@ -28,7 +28,7 @@ logger("Opened server site...", "[ Starting ]");
 function startBot(message) {
     (message) ? logger(message, "[ Starting ]") : "";
 
-    const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "SHAAN-KHAN.js"], {
+    const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿.js"], {
         cwd: __dirname,
         stdio: "inherit",
         shell: true
