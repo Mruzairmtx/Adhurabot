@@ -3,7 +3,7 @@ module.exports.config = {
   name: "tiktok",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Md Nazrul Islam",
+  credits: "uzairrajput",
   description: "HOT VEDIO",
   commandCategory: "Hình ảnh",
   usages: "sad vedio",
@@ -19,7 +19,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["- 🥀THIS🥀 VIDEO MADE BY SHAAN KHAN K🥀-💓--"];
+   var hi = ["𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨"];
   var know = hi[Math.floor(Math.random() * hi.length)];
   var link = [
    "https://i.imgur.com/kiWgfN9.mp4",
