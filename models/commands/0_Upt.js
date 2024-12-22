@@ -13,7 +13,7 @@ module.exports.config = {
   name: "upt",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "SHAAN KHAN",
+  credits: "uzairrajput",
   description: "Koii Prefix nhi",
   commandCategory: "Hukum Ke Bagher",
   usages: "Online Time Timing Dekhye",
@@ -60,7 +60,7 @@ module.exports.handleEvent = async ({ api, event, Threads }) => {
                             `✰ 𝗗𝗔𝗧𝗘 ➪ ${formattedDate}\n` +
                             `✰ 𝗗𝗔𝗬 ➪ ${formattedDay}\n` +
                             `━━━━━━━━━━━━━━━\n` +
-                            `𝗠𝗔𝗗𝗘 𝗕𝗬 ✰ 𝗦𝗛𝗔𝗔𝗡 𝗞𝗛𝗔𝗡`;
+                            `𝗠𝗔𝗗𝗘 𝗕𝗬 ✰ 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`;
 
     api.sendMessage(responseMessage, event.threadID, event.messageID);
   }
