@@ -1,9 +1,9 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "react",
+	name: "onfire",
     version: "1.1.1",
 	hasPermssion: 0,
-	credits: "Muhammad Ali", 
+	credits: "uzairrajput", 
 	description: "Just Respond",
 	commandCategory: "no prefix",
     cooldowns: 5, 
@@ -18,17 +18,17 @@ react.includes("Shaan") ||
 react.includes("admin")) {
 		var msg = {
 				body: `★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆★
-               ✦𝐒𝐇𝐀𝐀𝐍 𝐊𝐇𝐀𝐍✦
+               ✦Kìrâñ RajPööt ☠️🏴‍☠️✦
 
 ☞𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞:
-https://www.facebook.com/𝚜𝚑𝚊𝚊𝚗 uid👉✨100016828397863✨
+https://www.facebook.com/Kìrâñ RajPööt uid👉✨100086716792385✨
 
 
 
-★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 :  ✦𝐒𝐇𝐀𝐀𝐍 𝐊𝐇𝐀𝐍 𝐊✦`,attachment: fs.createReadStream(__dirname + `/noprefix/1711811285337.jpg`)
+★★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 :  ✦𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿✦`,attachment: fs.createReadStream(__dirname + `/uzair/.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("💔", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🤎", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
