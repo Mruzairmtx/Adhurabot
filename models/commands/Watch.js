@@ -2,7 +2,7 @@ module.exports.config = {
   name: "watch3",
   version: "7.3.1",
   hasPermssion: 0,
-  credits: " Hammad",///don't change my Credit Coz i Edit 
+  credits: "uzairrajput",///don't change my Credit Coz i Edit 
   description: "Get Pair From Mention",
   commandCategory: "img",
   usages: "[@mention]",
@@ -69,6 +69,6 @@ module.exports.run = async function ({ event, api, args }) {
   if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
   else {
       const one = senderID, two = mention[0];
-      return makeImage({ one, two }).then(path => api.sendMessage({ body: "", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+      return makeImage({ one, two }).then(path => api.sendMessage({ body: "𝑪𝒓𝒆𝒂𝒅𝒊𝒕\n\n◈ ──────────────── 💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
   }
     }
