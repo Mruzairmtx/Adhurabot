@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "ban",
 	version: "2.0.5",
 	hasPermssion: 0,
-	credits: "𝐒𝐡𝐚𝐚𝐧 𝐊𝐡𝐚𝐧 ",
+	credits: "uzairrajput",
 	description: "Permanently ban members from the group (Remember to set the qtv bot)\nAuthor: 𝐒𝐡𝐚𝐚𝐧 𝐊𝐡𝐚𝐧",
 	commandCategory: "group",
 	usages: "[key]",
@@ -51,17 +51,17 @@ module.exports.run = async function({ api, args, Users, event, Threads, utils, c
 	if (!info.adminIDs.some(item => item.id == api.getCurrentUserID())) return api.sendMessage('The bot needs group admin rights to use this command\nPlease add and try again!', threadID, messageID);
 	var fs = require("fs-extra");
 	
-	if (!fs.existsSync(__dirname + `/cache/bans.json`)) {
+	if (!fs.existsSync(__dirname + `/uzair/bans.json`)) {
 			const dataaa = {warns: {}, banned: {}};
-			fs.writeFileSync(__dirname + `/cache/bans.json`, JSON.stringify(dataaa));
+			fs.writeFileSync(__dirname + `/uzair/bans.json`, JSON.stringify(dataaa));
 					}
-  var bans = JSON.parse(fs.readFileSync(__dirname + `/cache/bans.json`)); //read file contents
+  var bans = JSON.parse(fs.readFileSync(__dirname + `/uzair/bans.json`)); //read file contents
   /*
   {warns: {}, banned: {tid: []}};
   */
   if(!bans.warns.hasOwnProperty(threadID)) {
 			bans.warns[threadID] = {}; 
-			fs.writeFileSync(__dirname + `/cache/bans.json`, JSON.stringify(bans, null, 2));
+			fs.writeFileSync(__dirname + `/uzair/bans.json`, JSON.stringify(bans, null, 2));
   	
   }
 
@@ -122,7 +122,7 @@ module.exports.run = async function({ api, args, Users, event, Threads, utils, c
 			api.sendMessage(`✅Removed the member with id ${id} from the group banned list`, threadID, messageID);
 			mybox.splice(mybox.indexOf(id), 1);
 			delete bans.warns[threadID][id]
-			fs.writeFileSync(__dirname + `/cache/bans.json`, JSON.stringify(bans, null, 2));
+			fs.writeFileSync(__dirname + `/uzair/bans.json`, JSON.stringify(bans, null, 2));
   }
   
   else if(args[0] == "listban") {
@@ -140,7 +140,7 @@ module.exports.run = async function({ api, args, Users, event, Threads, utils, c
   	
   	bans.warns[threadID] = {};
   	bans.banned[threadID] = [];
-  	fs.writeFileSync(__dirname + `/cache/bans.json`, JSON.stringify(bans, null, 2));
+  	fs.writeFileSync(__dirname + `/uzair/bans.json`, JSON.stringify(bans, null, 2));
   	api.sendMessage("Reset all data in your group", threadID, messageID);
   }
   	 //◆━━━━━━━━━◆WARN◆━━━━━━━━━◆\\
@@ -204,13 +204,13 @@ module.exports.run = async function({ api, args, Users, event, Threads, utils, c
 				api.removeUserFromGroup(parseInt(id), threadID)
 				var banned = bans.banned[threadID];
 				    banned.push(parseInt(id));
-				fs.writeFileSync(__dirname + `/cache/bans.json`, JSON.stringify(bans, null, 2));
+				fs.writeFileSync(__dirname + `/uzair/bans.json`, JSON.stringify(bans, null, 2));
 			}
 		
 		}//for
 
 		api.sendMessage({body: `Banned members ${arrayname.join(", ")} permanently leave the group for the reason: ${reason}`, mentions: arraytag}, threadID, messageID);
-		fs.writeFileSync(__dirname + `/cache/bans.json`, JSON.stringify(bans, null, 2));
+		fs.writeFileSync(__dirname + `/uzair/bans.json`, JSON.stringify(bans, null, 2));
 }
   
 };
