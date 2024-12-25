@@ -12,16 +12,16 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("owner") ||
-     react.includes("shan") || react.includes("shaan") || react.includes("Shan") ||
+	if(react.includes("@Kìrâñ RajPööt") ||
+     react.includes("kiran") || react.includes("shaan") || react.includes("Shan") ||
 react.includes("Shaan") ||
 react.includes("admin")) {
 		var msg = {
-				body: `★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆★
-               ✦Kìrâñ RajPööt ☠️🏴‍☠️✦
+				body: `★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆★\n\n◈ ──────────────── 💚✨
+               ✦Kìrâñ RajPööt ☠️🏴‍☠️✦\n\n◈ ──────────────── 💚✨\n\n
 
 ☞𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞:
-https://www.facebook.com/Kìrâñ RajPööt uid👉✨100086716792385✨
+https://www.facebook.com/Kìrâñ RajPööt uid👉✨100086716792385✨\n\n◈ ──────────────── 💚✨\n\n
 
 
 
