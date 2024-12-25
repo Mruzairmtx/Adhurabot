@@ -17,15 +17,15 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("@▞▔▚░╮░░░░╭░▞▔▚ ▌░░▚╰╮🦋╭╯▞░░ ▐ ▌░◙░▚▘🔘▝▞░◙░▐ ▚░░░") ||
 react.includes("MARYAM")) {
 		var msg = {
-				body: `★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆★
-               ✦MαɾYαɱ Hσɳ Yɯɾ😇✨✦
+				body: `★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆★\n\n◈ ──────────────── 💚✨\n\n
+               ✦MαɾYαɱ Hσɳ Yɯɾ😇✨✦\n\n◈ ──────────────── 💚✨\n\n
 
 ☞𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞:
-https://www.facebook.com/Missmaryam uid👉✨100010054632516✨
+https://www.facebook.com/Missmaryam uid👉✨100010054632516✨\n\n◈ ──────────────── 💚✨\n\n
 
 
 
-★★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 :  ✦𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿✦`,attachment: fs.createReadStream(__dirname + `/uzair/.jpg`)
+★★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 :  ✦𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿✦`,attachment: fs.createReadStream(__dirname + `/uzair/maryam.jpeg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("😇", event.messageID, (err) => {}, true)
