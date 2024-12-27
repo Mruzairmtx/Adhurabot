@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("@ Mahira Khan")==0 || (event.body.indexOf("Mahira")==0)) {
+	if (event.body.indexOf("@Mahira Khan ")==0 || (event.body.indexOf("Mahira")==0)) {
 		var msg = {
 				body: "𝑯𝑬𝑹𝑬 𝑴𝑨𝑯𝑰𝑹𝑨 𝑲𝑯𝑨𝑵 𝑺𝑻𝑶𝑹𝒀 🤍✨\n\n◈ ──────────────── 💚✨\n\n𝗖𝗿𝗲𝗱𝗶𝘁𝗲 :- 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿",
 				attachment: fs.createReadStream(__dirname + `/uzair/mahira.mp4`)
