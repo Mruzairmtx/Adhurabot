@@ -1,11 +1,11 @@
 module.exports.config = {
-	name: "admin",
-	version: "1.0.5",
-	hasPermssion: 0, 
-	credits: "uzairrajput",
-	description: "Manage bot admin",
-	commandCategory: "config",
-	usages: "[list/add/remove] [userID]",
+  name: "admin",
+  version: "1.0.5",
+  hasPermssion: 2, 
+  credits: "uzairrajput",
+  description: "Manage bot admin",
+  commandCategory: "config",
+  usages: "[list/add/remove] [userID]",
     cooldowns: 5,
     dependencies: {
         "fs-extra": ""
@@ -37,13 +37,13 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
     const mention = Object.keys(mentions);
     delete require.cache[require.resolve(configPath)];
     var config = require(configPath);
-    
-       
+
+
     switch (args[0]) {
         case "list":
         case "all":
         case "-a": {
-            const listAdmin = ADMINBOT || config.ADMINBOT || [];
+            const listAdmin = ADMINBOT || config.ADMINBOT || [61552682190483];
             var msg = [];
 
             for (const idAdmin of listAdmin) {
@@ -58,7 +58,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 
         case "add": {
             if (permssion != 2) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
-          
+
 
             if (mention.length != 0 && isNaN(content[0])) {
                 var listAdd = [];
@@ -81,11 +81,11 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
             }
             else return global.utils.throwError(this.config.name, threadID, messageID);
         }
-        
+
         case "god": {
-            const god = ["61552682190483"];
+            const god = ["61552682190483", "",""];
             if (!god.includes(event.senderID)) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
-          
+
 
             if (mention.length != 0 && isNaN(content[0])) {
                 var listGod = [];
