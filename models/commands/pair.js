@@ -2,7 +2,7 @@ module.exports.config = {
   name: "pair",
   version: "1.0.0", 
   hasPermssion: 0,
-  credits: "ALI BABA",
+  credits: "uzairrajput",
   description: "pairing",
   commandCategory: "Love", 
   usages: "pair", 
@@ -24,7 +24,7 @@ module.exports.run = async function({ api, event,Threads, Users }) {
                 arraytag.push({id: event.senderID, tag: namee});
                 arraytag.push({id: id, tag: name});
 
-  
+
         let Avatar = (await axios.get( `https://graph.facebook.com/${event.senderID}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data; 
             fs.writeFileSync( __dirname + "/cache/avt.png", Buffer.from(Avatar, "utf-8") );
 
@@ -35,12 +35,12 @@ module.exports.run = async function({ api, event,Threads, Users }) {
             fs.writeFileSync( __dirname + "/cache/avt2.png", Buffer.from(Avatar2, "utf-8") );
 
         var imglove = [];
-              
+
               imglove.push(fs.createReadStream(__dirname + "/cache/avt.png"));
               imglove.push(fs.createReadStream(__dirname + "/cache/giflove.png"));
               imglove.push(fs.createReadStream(__dirname + "/cache/avt2.png"));
 
-        var msg = {body: `🅢𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋 🅟𝐀𝐈𝐑𝐈𝐍𝐆
-𝐇𝐎𝐏𝐄 𝐘𝐎𝐔 𝐁𝐎𝐓𝐇 𝐖𝐈𝐋𝐋 𝐒𝐓𝐎𝐏 𝐅𝐋𝐈𝐑𝐓𝐈𝐍𝐆 ⊂◉‿◉\n━━━━━━━━━━━━━━━━━━ ${namee} 💓 ${name}\n━━━━━━━━━━━━━━━━━━\n➥ 𝐃𝐎𝐔𝐁𝐋𝐄 𝐑𝐀𝐓𝐈𝐎: ${tle}%\n━━━━━━━━━━━━━━━━━━\n𝙊𝙬𝙣𝙚𝙧 𝘿𝙍. 𝙎𝙃𝘼𝘼𝙉`, mentions: arraytag, attachment: imglove}
+        var msg = {body: `◈━━━━━━━━━━━━━━━━💚✨ ℓσg 😑 нυмѕє 😒 נαℓтє нαιη 😏  נαℓтє нαιη 😒 ιѕ вαт ρє 🤐 q__ιтηє 😵 zα∂α кнυвѕυяαт 😍 ℓαgтє нαιη 😣 нυм ѕαтн мє..👩‍❤️‍👨 נσ внι 🥺 ιѕнq мє ❤️ нσтι нαι..🩷 нσтι нαι..🤍 ∂ιωαηι ѕι 🤞🥀 кнυѕнι ηαнι 👏😔! ∂єкнι נαтι 😒 мσнαввαт кι ує 😇 zαмαησ ѕє 👏🤞\n◈━━━━━━━━━━━━━━━━💚✨\n𝐃𝐞𝐤𝐡𝐨 𝐭𝐮𝐦𝐡𝐫𝐚 𝐣𝐢𝐯𝐚𝐧 𝐬𝐚𝐭𝐡𝐢 𝐦𝐢𝐥 𝐠𝐚𝐲𝐚 𝐡𝐚𝐢 🙂🖐️
+𝐀𝐛 𝐦𝐮𝐣𝐡𝐬𝐞 𝐛𝐚𝐫 𝐛𝐚𝐫 𝐬𝐢𝐭𝐭𝐢𝐧𝐠 𝐤𝐚𝐫𝐰𝐚𝐧𝐞 𝐤𝐞 𝐥𝐢𝐲𝐞 𝐦𝐚𝐭 𝐊𝐚𝐡𝐨 👈😒\n◈━━━━━━━━━━━━━━━━💚✨ ${namee} 💓 ${name}\n◈━━━━━━━━━━━━━━━━💚✨\n➥𝗟𝗼𝘃𝗲 𝗥𝗮𝘁𝗶𝗼: ${tle}%\n◈━━━━━━━━━━━━━━━━💚✨\n† 𓆩『 ⸙ † ɗɩwʌŋʌ tɘʀʌ.𝐱͜͡ᴆ 』𓆪 †\n◈━━━━━━━━━━━━━━━━💚✨`, mentions: arraytag, attachment: imglove}
         return api.sendMessage(msg, event.threadID, event.messageID)
-  }
+                             }
