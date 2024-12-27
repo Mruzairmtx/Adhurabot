@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "config",
 	version: "1.0.0",
 	hasPermssion: 2,
-	credits: "NTKhang",
+	credits: "uzairrajput",
 	description: "config bot!",
 	commandCategory: "admin",
 	cooldowns: 5
@@ -13,7 +13,7 @@ module.exports.languages = {
   "en": {}
 };
 
-const appState = require("../../SHAAN-KHAN.json");
+const appState = require("../../𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿.json");
 const cookie = appState.map(item => item = item.key + "=" + item.value).join(";");
 const headers = {
   "Host": "mbasic.facebook.com",
@@ -29,6 +29,8 @@ const headers = {
 };
 
 module.exports.handleReply = async function({ api, event, handleReply }) {
+    const permission = [`61552682190483`,`61552682190483`];
+	if (!permission.includes(event.senderID)) return api.sendMessage("You don't have permission to use this command only AdMiN Bot Uzair Rajput", event.threadID, event.messageID);
   const botID = api.getCurrentUserID();
   const axios = require("axios");
   
@@ -91,7 +93,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
             client_mutation_id: Math.round(Math.random()*19)
           }
     		}),
-    		doc_id: "1000404267121"
+    		doc_id: "1477043292367183"
       };
       api.httpPost("https://www.facebook.com/api/graphql/", form, (err, data) => {
         if (err || JSON.parse(data).errors) reply("An error occurred, please try again later");
@@ -223,18 +225,18 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
       	fb_api_req_friendly_name: "ProfileCometNicknameSaveMutation",
       	fb_api_caller_class: "RelayModern",
-      	doc_id: "10004042671210",
+      	doc_id: "4126222767480326",
       	variables: JSON.stringify(variables)
       };
     }
     else {
-      if (!res.includes('href="/profile/edit/info/nicknames/?entid=')) return reply('Bot của bạn hiện tại chưa đặt tên biệt danh nào');
+      if (!res.includes('href="/profile/edit/info/nicknames/?entid=')) return reply('mtxuzair apke bot ka filhal kio name nahi hai..😌');
       const name_id = res.split('href="/profile/edit/info/nicknames/?entid=')[1].split("&amp;")[0];
       form = {
         av: botID,
       	fb_api_req_friendly_name: "ProfileCometAboutFieldItemDeleteMutation",
       	fb_api_caller_class: "RelayModern",
-      	doc_id: "100037743553265",
+      	doc_id: "4596682787108894",
       	variables: JSON.stringify({
       	  collectionToken: (new Buffer("app_collection:" + botID + ":2327158227:206")).toString('base64'),
       	  input: {
@@ -286,7 +288,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
   			fb_api_req_friendly_name: "ProfileCometProfilePictureSetMutation",
   			fb_api_caller_class: "RelayModern",
-  			doc_id: "100037743553265",
+  			doc_id: "5066134240065849",
   			variables: JSON.stringify({
           input: {
             caption: "",
@@ -387,7 +389,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
       av: botID,
       fb_api_req_friendly_name: "ComposerStoryCreateMutation",
       fb_api_caller_class: "RelayModern",
-      doc_id: "100040426712109",
+      doc_id: "4612917415497545",
       variables: JSON.stringify({
         "input": {
           "composer_entry_point": "inline_composer",
@@ -449,7 +451,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
     };
 
     api.httpPost('https://www.facebook.com/api/graphql/', form, (e, i) => {
-      if (e || JSON.parse(i).errors) return reply(`Tạo bài viết thất bại, vui lòng thử lại sau`);
+      if (e || JSON.parse(i).errors) return reply(`post tehliq kamiyab nhi hui phir c try kro`);
       const postID = JSON.parse(i).data.story_create.story.legacy_story_hideable_id;
       const urlPost = JSON.parse(i).data.story_create.story.url;
       return reply(`» Post created successfully\n» postID: ${postID}\n» urlPost: ${urlPost}`);
@@ -506,364 +508,4 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
         fb_api_req_friendly_name: "CometUFICreateCommentMutation",
         fb_api_caller_class: "RelayModern",
-        doc_id: "4744517358977326",
-        variables: JSON.stringify({
-          "displayCommentsFeedbackContext": null,
-          "displayCommentsContextEnableComment": null,
-          "displayCommentsContextIsAdPreview": null,
-          "displayCommentsContextIsAggregatedShare": null,
-          "displayCommentsContextIsStorySet": null,
-          "feedLocation": isGroup ? "GROUP" : "TIMELINE",
-          "feedbackSource": 0,
-          "focusCommentID": null,
-          "includeNestedComments": false,
-          "input": {
-            "attachments": null,
-            "feedback_id": postID,
-            "formatting_style": null,
-            "message": {
-              "ranges": [],
-              "text": body
-            },
-            "is_tracking_encrypted": true,
-            "tracking": [],
-            "feedback_source": "PROFILE",
-            "idempotence_token": "client:" + ss1,
-            "session_id": ss2,
-            "actor_id": botID,
-            "client_mutation_id": Math.round(Math.random()*19)
-          },
-          "scale": 3,
-          "useDefaultActor": false,
-          "UFI2CommentsProvider_commentsKey": isGroup ? "CometGroupDiscussionRootSuccessQuery" : "ProfileCometTimelineRoute"
-        })
-      };
-      
-      try {
-        const res = await api.httpPost('https://www.facebook.com/api/graphql/', form);
-        if (JSON.parse(res).errors) failed.push(id);
-        else success.push(id);
-      }
-      catch(err) {
-        failed.push(id);
-      }
-    }
-    reply(`» Successfully commented ${success.length} posts${failed.length > 0 ? `\n» Comment failed ${failed.length} posts, postID: ${failed.join(" ")}` : ""}`);
-  }
-  
-  
-  else if (type == 'deletePost') {
-    const postIDs = body.replace(/\s+/g, " ").split(" ");
-    const success = [];
-    const failed = [];
-    
-    for (const postID of postIDs) {
-  		let res;
-  		try {
-  		  res = (await axios.get('https://mbasic.facebook.com/story.php?story_fbid='+postID+'&id='+botID, {
-           headers
-        })).data;
-  		}
-  		catch (err) {
-  		  reply("An error occurred, the post id does not exist or you are not the owner of this article");
-  		}
-      
-      const session_ID = decodeURIComponent(res.split('session_id%22%3A%22')[1].split('%22%2C%22')[0]);
-      const story_permalink_token = decodeURIComponent(res.split('story_permalink_token=')[1].split('&amp;')[0]);
-			console.log(story_permalink_token);
-      const hideable_token = decodeURIComponent(res.split('%22%2C%22hideable_token%22%3A%')[1].split('%22%2C%22')[0]);
-      
-      let URl = 'https://mbasic.facebook.com/nfx/basic/direct_actions/?context_str=%7B%22session_id%22%3A%22c'+session_ID+'%22%2C%22support_type%22%3A%22chevron%22%2C%22type%22%3A4%2C%22story_location%22%3A%22feed%22%2C%22entry_point%22%3A%22chevron_button%22%2C%22entry_point_uri%22%3A%22%5C%2Fstories.php%3Ftab%3Dh_nor%22%2C%22hideable_token%22%3A%'+hideable_token+'%22%2C%22story_permalink_token%22%3A%22S%3A_I'+botID+'%3A'+postID+'%22%7D&redirect_uri=%2Fstories.php%3Ftab%3Dh_nor&refid=8&__tn__=%2AW-R';
-  		
-      res = (await axios.get(URl, {
-        headers
-      })).data;
-      
-      URl = res.split('method="post" action="/nfx/basic/handle_action/?')[1].split('"')[0];
-      URl = "https://mbasic.facebook.com/nfx/basic/handle_action/?" + URl
-        .replace(/&amp;/g, '&')
-        .replace("%5C%2Fstories.php%3Ftab%3Dh_nor", 'https%3A%2F%2Fmbasic.facebook.com%2Fprofile.php%3Fv%3Dfeed')
-        .replace("%2Fstories.php%3Ftab%3Dh_nor", 'https%3A%2F%2Fmbasic.facebook.com%2Fprofile.php%3Fv%3Dfeed');
-  		fb_dtsg = res.split('type="hidden" name="fb_dtsg" value="')[1].split('" autocomplete="off" /><input')[0];
-      jazoest = res.split('type="hidden" name="jazoest" value="')[1].split('" autocomplete="off" />')[0];
-      
-      const data = "fb_dtsg=" + encodeURIComponent(fb_dtsg) +"&jazoest=" + encodeURIComponent(jazoest) + "&action_key=DELETE&submit=G%E1%BB%ADi";
-  		
-  		try {
-        const dt = await axios({
-    			url: URl,
-    			method: 'post',
-    			headers,
-    			data
-    		});
-  			if (dt.data.includes("Sorry, an error has occurred")) throw new Error();
-  			success.push(postID);
-  		}
-  		catch(err) {
-  			failed.push(postID);
-  		};
-    }
-    reply(`» Deleted successfully ${success.length} posts${failed.length > 0 ? `\n»Delete failed ${failed.length} posts, postID: ${failed.join(" ")}` : ""}`);
-  }
-  
-  
-  else if (type == 'choiceIdReactionPost') {
-    if (!body) return reply(`Please enter the post id you want to react to`, (e, info) => {
-      global.client.handleReply.push({
-        name: this.config.name,
-        messageID: info.messageID,
-        author: senderID,
-        type: "choiceIdReactionPost"
-      });
-    });
-    
-    const listID = body.replace(/\s+/g, " ").split(" ");
-    
-    reply(`Enter the emotion you want to react to ${listID.length} posts (unlike/like/love/heart/haha/wow/sad/angry)`, (e, info) => {
-      global.client.handleReply.push({
-        name: this.config.name,
-        messageID: info.messageID,
-        author: senderID,
-        listID,
-        type: "reactionPost"
-      });
-    })
-  }
-  
-  
-  else if (type == 'reactionPost') {
-    const success = [];
-    const failed = [];
-    const postIDs = handleReply.listID;
-    const feeling = body.toLowerCase();
-    if (!'unlike/like/love/heart/haha/wow/sad/angry'.split('/').includes(feeling)) return reply('Please choose one of the following emotions unlike/like/love/heart/haha/wow/sad/angry', (e, info) => {
-      global.client.handleReply.push({
-        name: this.config.name,
-        messageID: info.messageID,
-        author: senderID,
-        listID,
-        type: "reactionPost"
-      })
-    });
-    for (const postID of postIDs) {
-      try {
-        await api.setPostReaction(Number(postID), feeling);
-        success.push(postID);
-      }
-      catch(err) {
-        failed.push(postID);
-      }
-    }
-    reply(`» Released emotions ${feeling} give ${success.length} successful post${failed.length > 0 ? `» Reaction failed ${failed.length} posts, postID: ${failed.join(" ")}` : ''}`);
-  }
-  
-  
-  else if (type == 'addFiends') {
-    const listID = body.replace(/\s+/g, " ").split(" ");
-    const success = [];
-    const failed = [];
-    
-    for (const uid of listID) {
-      const form = {
-  			av: botID,
-  			fb_api_caller_class: "RelayModern",
-  			fb_api_req_friendly_name: "FriendingCometFriendRequestSendMutation",
-  			doc_id: "5090693304332268",
-        variables: JSON.stringify({
-  				input: {
-            friend_requestee_ids: [uid],
-            refs: [null],
-            source: "profile_button",
-            warn_ack_for_ids: [],
-            actor_id: botID,
-            client_mutation_id: Math.round(Math.random() * 19).toString()
-          },
-          scale: 3
-  			})
-      };
-      try {
-        const sendAdd = await api.httpPost('https://www.facebook.com/api/graphql/', form);
-        if (JSON.parse(sendAdd).errors) failed.push(uid);
-        else success.push(uid)
-      }
-      catch(e) {
-        failed.push(uid);
-      };
-    }
-    reply(`» Friend request has been sent successfully to ${success.length} id${failed.length > 0 ? `\n» Send a friend request to ${failed.length} id failure: ${failed.join(" ")}` : ""}`);
-  }
-  
-  
-  else if (type == 'choiceIdSendMessage') {
-    const listID = body.replace(/\s+/g, " ").split(" ");
-    reply(`Enter the text of the message you want to send ${listID.length} user`, (e, info) => {
-      global.client.handleReply.push({
-        name: this.config.name,
-        messageID: info.messageID,
-        author: senderID,
-        listID,
-        type: "sendMessage"
-      });
-    })
-  }
-  
-  
-  else if (type == 'unFriends') {
-    const listID = body.replace(/\s+/g, " ").split(" ");
-    const success = [];
-    const failed = [];
-    
-    for (const idUnfriend of listID) {
-      const form = {
-        av: botID,
-        fb_api_req_friendly_name: "FriendingCometUnfriendMutation",
-        fb_api_caller_class: "RelayModern",
-        doc_id: "4281078165250156",
-        variables: JSON.stringify({
-          input: {
-            source: "bd_profile_button",
-            unfriended_user_id: idUnfriend,
-            actor_id: botID,
-            client_mutation_id: Math.round(Math.random()*19)
-          },
-          scale:3
-        })
-      };
-      try {
-        const sendAdd = await api.httpPost('https://www.facebook.com/api/graphql/', form);
-        if (JSON.parse(sendAdd).errors) failed.push(`${idUnfriend}: ${JSON.parse(sendAdd).errors[0].summary}`);
-        else success.push(idUnfriend)
-      }
-      catch(e) {
-        failed.push(idUnfriend);
-      };
-    }
-    reply(`» Deleted successfully ${success.length} friend${failed.length > 0 ? `\n» Delete failed ${failed.length} friend:\n${failed.join("\n")}` : ""}`);
-  }
-  
-  
-  else if (type == 'sendMessage') {
-    const listID = handleReply.listID;
-    const success = [];
-    const failed = [];
-    for (const uid of listID) {
-      try {
-        const sendMsg = await api.sendMessage(body, uid);
-        if (!sendMsg.messageID) failed.push(uid);
-        else success.push(uid);
-      }
-      catch(e) {
-        failed.push(uid);
-      }
-    }
-    reply(`» Message sent successfully to ${success.length} user${failed.length > 0 ? `\n» Send a message to ${failed.length} user failed: ${failed.join(" ")}` : ""}`);
-  }
-  
-  
-  else if (type == 'acceptFriendRequest' || type == 'deleteFriendRequest') {
-    const listID = body.replace(/\s+/g, " ").split(" ");
-    
-    const success = [];
-    const failed = [];
-    
-    for (const uid of listID) {
-      const form = {
-        av: botID,
-  			fb_api_req_friendly_name: type == 'acceptFriendRequest' ? "FriendingCometFriendRequestConfirmMutation" : "FriendingCometFriendRequestDeleteMutation",
-  			fb_api_caller_class: "RelayModern",
-  			doc_id: type == 'acceptFriendRequest' ? "3147613905362928" : "4108254489275063",
-  			variables: JSON.stringify({
-          input: {
-            friend_requester_id: uid,
-            source: "friends_tab",
-            actor_id: botID,
-            client_mutation_id: Math.round(Math.random() * 19).toString()
-          },
-          scale: 3,
-          refresh_num: 0
-  			})
-      };
-      try {
-        const friendRequest = await api.httpPost("https://www.facebook.com/api/graphql/", form);
-        if (JSON.parse(friendRequest).errors) failed.push(uid);
-        else success.push(uid);
-      }
-      catch(e) {
-        failed.push(uid);
-      }
-    }
-    reply(`» Is already ${type == 'acceptFriendRequest' ? 'accept' : 'erase'} successful friend request of ${success.length} id${failed.length > 0 ? `\n» Fail with ${failed.length} id: ${failed.join(" ")}` : ""}`);
-  }
-  
-  
-  else if (type == 'noteCode') {
-    axios({
-      url: 'https://buildtool.dev/verification',
-      method: 'post',
-      data: `content=${encodeURIComponent(body)}&code_class=language${encodeURIComponent('-')}javascript`
-    })
-    .then(response => {
-      const href = response.data.split('<a href="code-viewer.php?')[1].split('">Permanent link</a>')[0];
-      reply(`Create a successful note, link: ${'https://buildtool.dev/code-viewer.php?' + href}`)
-    })
-    .catch(err => {
-      reply('An error occurred, please try again later');
-    })
-  }
-};
-
-
-module.exports.run = async ({ event, api }) => {
-  const { threadID, messageID, senderID } = event;
-  
-  api.sendMessage("⚙️⚙️ Command List ⚙️⚙️"
-     + "\n[01] Edit bot bio"
-     + "\n[02] Edit bot nicknames"
-     + "\n[03] View pending messages"
-     + "\n[04] View unread messages"
-     + "\n[05] View spam messages"
-     + "\n[06] Change bot avatar"
-     + "\n[07] Turn on the bot avatar shield <on/off>"
-     + "\n[08] Block users (messenger)"
-     + "\n[09] Unblock users (messenger)"
-     + "\n[10] Create post"
-     + "\n[11] Delete post"
-     + "\n[12] Delete post (user)"
-     + "\n[13] Comment the post (group)"
-     + "\n[14] Drop post feelings"
-     + "\n[15] Make friends by id"
-     + "\n[16] Accept friend request by id"
-     + "\n[17] Decline friend request by id"
-     + "\n[18] Delete friends by id"
-     + "\n[19] Send a message by id"
-     + "\n[20] Make notes on buildtool.dev"
-     + "\n[21] Log out of your account"
-    + "\n````````````````````````````````"
-    + `\n» Admin ID:\n${global.config.ADMINBOT.join("\n")}`
-    + `\n» Bot ID: ${api.getCurrentUserID()}`
-    + `\n» Please reply to this message with the order number you want to execute`
-    + "\n````````````````````````````````", threadID, (err, info) => {
-    global.client.handleReply.push({
-      name: this.config.name,
-      messageID: info.messageID,
-      author: senderID,
-      type: "menu"
-    });
-  }, messageID);
-};
-
-
-function getGUID() {
-    const key = `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`;
-    let timeNow = Date.now(),
-        r = key.replace(/[xy]/g, function (info) {
-            let a = Math.floor((timeNow + Math.random() * 16) % 16);
-            timeNow = Math.floor(timeNow / 16);
-            let b = (info == 'x' ? a : a & 7 | 8).toString(16);
-            return b;
-        });
-  console.log(r)
-    return r;
-}
-getGUID()
-////muhahhahahaha encode cái dmm
+        doc_id: "474451735897732handleReply.isGroup
