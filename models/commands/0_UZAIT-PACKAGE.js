@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "package",
 	version: "1.0.1", 
 	hasPermssion: 2,
-	credits: "Arif package", //don't change the credits please
+	credits: "uzairrajput", //don't change the credits please
 	description: ".",
 	commandCategory: "bible verse",
 	cooldowns: 1,
@@ -17,13 +17,13 @@ module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOB
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-var link = ["https://i.imgur.com/UVABL3p.jpg"];
+var link = ["https://i.imgur.com/3YY1PAf.jpeg"];
 var callback = () => api.sendMessage({body:`
 {
-	"name": "Arun",
+	"name": "uzairmtx",
 	"version": "9.9.3",
-	"description": "A simple Facebook Messenger Bot made by me(CatalizCS) and my brother SpermLord don't forget miraiproject.",
-	"main": "mirai.js",
+	"description": "A simple Facebook Messenger Bot made by uzairrajput project.",
+	"main": "mruzairxxxmtx.js",
 	"scripts": {
 		"start": "pm2 kill && pm2 start index.js -i 1 --no-daemon",
 		"login": "node login",
@@ -38,12 +38,12 @@ var callback = () => api.sendMessage({body:`
 		"facebook",
 		"projectmirai",
 		"messenger",
-		"mirai",
-		"catalizcs",
-		"spermlord",
-		"miraipr0ject"
+		"uzair",
+		"uzairmtx",
+		"uzairrajput",
+		"uzairpr0ject"
 	],
-	"author": "Choru TikTokers",
+	"author": "itxuzair449",
 	"license": "GPL-3.0",
 	"bugs": {
 		"url": "https://github.com/ChoruTiktokers182/Choru-bypass/issues"
