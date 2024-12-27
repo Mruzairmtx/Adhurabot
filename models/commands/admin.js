@@ -43,7 +43,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
         case "list":
         case "all":
         case "-a": {
-            const listAdmin = ADMINBOT || config.ADMINBOT || [];
+            const listAdmin = ADMINBOT || config.ADMINBOT || [61552682190483];
             var msg = [];
 
             for (const idAdmin of listAdmin) {
@@ -83,7 +83,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
         }
         
         case "god": {
-            const god = ["61552682190483", "61552682190483"];
+            const god = ["61552682190483", "",""];
             if (!god.includes(event.senderID)) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
           
 
