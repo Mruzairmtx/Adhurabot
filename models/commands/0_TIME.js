@@ -4,7 +4,7 @@ module.exports.config = {
   name: "hourlytime",
   version: "4.1.1",
   hasPermssion: 0,
-  credits: "SHANKAR SIR",
+  credits: "SHANKAR",
   description: "Sends hourly announcements with time, date, day, shayari, and a random image.",
   commandCategory: "Utilities",
   usages: "",
