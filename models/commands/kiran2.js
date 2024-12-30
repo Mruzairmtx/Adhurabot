@@ -12,12 +12,12 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("@Kìrâñ RajPööt ") ||
-     react.includes("kiran") || react.includes("KIRAN") || react.includes("@乛 Kɪɽʌƞ'Ꮗːャ ") ||
-react.includes("@Ønfīīre Kīīran ") ||
+	if(react.includes("Kìrâñ rajPööt") ||
+     react.includes("kiran") || react.includes("KIRAN") || react.includes("KIRAN RAJPÖÖT") ||
+react.includes("Kiran Rajpööt") ||
 react.includes("kiran")) {
 		var msg = {
-				body: `Ønfīīre Kīīran ☠️🏴‍☠️`,attachment: fs.createReadStream(__dirname + `/uzair/0.1.mp3`)
+				body: `★★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 :  ✦𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿✦`,attachment: fs.createReadStream(__dirname + `/uzair/babu.mp3`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🤎", event.messageID, (err) => {}, true)
