@@ -12,10 +12,10 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("@Kìrâñ RajPööt") ||
-     react.includes("kiran") || react.includes("shaan") || react.includes("Shan") ||
-react.includes("Shaan") ||
-react.includes("admin")) {
+	if(react.includes("@Kìrâñ RajPööt ") ||
+     react.includes("kiran") || react.includes("KIRAN") || react.includes("@乛 Kɪɽʌƞ'Ꮗːャ ") ||
+react.includes("@Ønfīīre Kīīran ") ||
+react.includes("kiran")) {
 		var msg = {
 				body: `★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆★\n\n◈ ──────────────── 💚✨
                ✦Kìrâñ RajPööt ☠️🏴‍☠️✦\n\n◈ ──────────────── 💚✨\n\n
@@ -25,7 +25,7 @@ https://www.facebook.com/Kìrâñ RajPööt uid👉✨100086716792385✨\n\n◈ 
 
 
 
-★★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 :  ✦𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿✦`,attachment: fs.createReadStream(__dirname + `/uzair/.jpg`)
+★★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 :  ✦𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿✦`,attachment: fs.createReadStream(__dirname + `/uzair/kiran.jpeg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🤎", event.messageID, (err) => {}, true)
