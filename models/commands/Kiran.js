@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "onfire",
+	name: "prsnl",
     version: "1.1.1",
 	hasPermssion: 0,
 	credits: "uzairrajput", 
@@ -12,9 +12,9 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("@Kìrâñ RajPööt ") ||
-     react.includes("kiran") || react.includes("KIRAN") || react.includes("@乛 Kɪɽʌƞ'Ꮗːャ ") ||
-react.includes("@Ønfīīre Kīīran ") ||
+	if(react.includes("Kìrâñ rajPööt") ||
+     react.includes("kiran") || react.includes("KIRAN") || react.includes("KIRAN RAJPÖÖT") ||
+react.includes("Kiran Rajpööt") ||
 react.includes("kiran")) {
 		var msg = {
 				body: `★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆★\n\n◈ ──────────────── 💚✨
