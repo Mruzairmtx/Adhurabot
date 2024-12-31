@@ -2,7 +2,7 @@ module.exports.config = {
   name: 'bayot',
   version: '1.0.0',
   hasPermssion: 0,
-  credits: 'junmar',// potang ina nyo wag nyo i change credits gago!
+  credits: 'uzairrajput',// teri maa ki chut credit kia tw!
   description: 'search bayot pictures Pictures.',
   usePrefix: true,
   commandCategory: 'nsfw',
