@@ -29,7 +29,7 @@ module.exports.handleEvent = function ({ api, event, client, __GLOBAL }) {
             // Send text message with prefix information
             api.sendMessage(
                 {
-                    body: `Yo, my prefix is » ${global.config.PREFIX} «\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨
+                    body: `Yo, my prefix is » ${global.config.PREFIX} «\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨\n\n
 𝗦𝗢𝗠𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗧𝗛𝗔𝗧 𝗠𝗔𝗬 𝗛𝗘𝗟𝗣 𝗬𝗢𝗨:
 ➥ ${global.config.PREFIX}help [number of page] -> see commands
 ➥ ${global.config.PREFIX}sim [message] -> talk to bot
