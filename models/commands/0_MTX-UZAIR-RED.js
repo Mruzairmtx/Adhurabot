@@ -1,29 +1,51 @@
 module.exports.config = {
-	name: "red",
-	version: "11.9.7",
-	hasPermssion: 0,
-	credits: "uzairrajput",
-	description: "redroom videos Not For Kids",
-	commandCategory: "Nsfw",
-	usages: "",
-	cooldowns: 10,
+  name: "sad", 
+  version: "1.0.0", 
+  permission: 0,
+  credits: "uzairrajput",
+  description: "sad video",
+  commandCategory: "Random", 
+  usages: "sad", 
+  cooldowns: 5,
+  dependencies: {
+    "request":"",
+    "fs-extra":"",
+    "fs":""
+  }
 };
 
-module.exports.run = async function({ api, event }) {
-  const axios = require('axios');
-  const request = require('request');
-  const fs = require("fs");
-  var red = ["https://porn.api-johnlester.repl.co", "https://porn-1.api-johnlester.repl.co", "https://porn-2.api-johnlester.repl.co", "https://porn.api-johnlester.repl.co", "https://porn-1.api-johnlester.repl.co", "https://porn-2.api-johnlester.repl.co", "https://porn.api-johnlester.repl.co", "https://porn-1.api-johnlester.repl.co", "https://porn-2.api-johnlester.repl.co"]
-  var redroom = red[Math.floor(Math.random() * red.length)]
-  axios.get(redroom).then(res => {
-  let ext = res.data.data.substring(res.data.data.lastIndexOf(".") + 1);
-  let count = res.data.count;
-  let callback = function () {
-          api.sendMessage({
-            body: ``,
-            attachment: fs.createReadStream(__dirname + `/data/kanna.${ext}`)
-          }, event.threadID, () => fs.unlinkSync(__dirname + `/data/kanna.${ext}`), event.messageID);
-        };
-        request(res.data.data).pipe(fs.createWriteStream(__dirname + `/data/kanna.${ext}`)).on("close", callback);
-      })
+const videoDATA = "https://videos-api.mcs-badol-bot-007.repl.co/video/sad";
+
+module.exports.onLoad = ({}) => {
+  if (!global.nodemodule["fs"].existsSync(__dirname + '/badol')) {
+    global.nodemodule["fs"].mkdirSync(__dirname + '/badol');
+  }
+  global.nodemodule["fs"].readdirSync(__dirname + '/badol').forEach(file => {
+    global.nodemodule["fs"].unlinkSync(__dirname + `/badol/${file}`);
+  })
 }
+
+module.exports.run = async ({ api, event }) => {
+  global.nodemodule["axios"]
+    .get(videoDATA)
+    .then(res => {
+      global.nodemodule["axios"]
+        .get(encodeURI(res.data.data), { responseType: "arraybuffer" })
+        .then(ress => {
+          let path = __dirname + `/badol/${Date.now()}.mp4`;
+          global.nodemodule["fs"].writeFileSync(path, Buffer.from(ress.data, 'utf-8'));
+          api.sendMessage({
+            body: "╭•┄┅══𝑨𝑺𝑰𝑭-𝒙𝟔𝟗-𝘽𝙊𝙏══┅┄•╮\n\n━━━━━━━━━━━━━━━━\n\n╰┈►𝙎𝘼𝘿-𝙑𝙄𝘿𝙀𝙊-𝘼𝙋𝙄◄┈╯\n\n━━━━━━━━━━━━━━━━\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸ𝙈𝙊𝙃𝘼𝙈𝙈𝘼𝘿-𝘽𝘼𝘿𝘼𝙇-𝘾𝙃𝙊𝙒𝘿𝙃𝙐𝙍𝙔ꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿\n\n╰•┄┅══𝑨𝑺𝑰𝑭-𝐱𝟔𝟗-𝘽𝙊𝙏══┅┄•╯",
+            attachment: global.nodemodule["fs"].createReadStream(path)
+          }, event.threadID, () => global.nodemodule["fs"].unlinkSync(path), event.messageID);
+          return;
+        })
+        .catch(e => {
+          api.sendMessage("Something went wrong...", event.threadID, event.messageID);
+          return;
+        });
+    })
+  .catch(e => {
+    api.sendMessage("Something went wrong...", event.threadID, event.messageID);
+    return;
+  });
