@@ -22,7 +22,7 @@ module.exports.onLoad = async() => {
   const dirMaterial = __dirname + `/uzair/mtx/`;
   const path = resolve(__dirname, 'uzair/mtx', 'love.jpeg');
   if (!existsSync(dirMaterial + "mtx")) mkdirSync(dirMaterial, { recursive: true });
-  if (!existsSync(path)) await downloadFile("https://i.imgur.com/UnBVDje.jpg", path);
+  if (!existsSync(path)) await downloadFile("https://i.imgur.com/cfGZriB.jpeg", path);
 }
 
 async function makeImage({ one, two }) {
