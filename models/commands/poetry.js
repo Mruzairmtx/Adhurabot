@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "poetry",
     version: "1.0.0",
-    hasPermssion: 0,
+    hasPermssion: 1,
     credits: "uzairrajput",
     description: "War nát cái boxchat",
     commandCategory: "group",
