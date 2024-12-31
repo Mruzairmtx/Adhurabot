@@ -29,12 +29,12 @@ module.exports.handleEvent = function ({ api, event, client, __GLOBAL }) {
             // Send text message with prefix information
             api.sendMessage(
                 {
-                    body: `Yo, my prefix is » ${global.config.PREFIX} «\n
+                    body: `Yo, my prefix is » ${global.config.PREFIX} «\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨
 𝗦𝗢𝗠𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗧𝗛𝗔𝗧 𝗠𝗔𝗬 𝗛𝗘𝗟𝗣 𝗬𝗢𝗨:
 ➥ ${global.config.PREFIX}help [number of page] -> see commands
 ➥ ${global.config.PREFIX}sim [message] -> talk to bot
 ➥ ${global.config.PREFIX}callad [message] -> report any problem encountered
-➥ ${global.config.PREFIX}help [command] -> information and usage of command\n\nHave fun using it enjoy!❤️\n\nBot Developer: ${global.config.OWNERLINK} `,
+➥ ${global.config.PREFIX}help [command] -> information and usage of command\n\nHave fun using it enjoy!❤️\n\nBot Developer: MUHAMMAD UZAIR RAJPUT MTX 🏴‍☠️`,
                     attachment: fs.createReadStream(
                         __dirname + `/uzair/prefix.gif`
                     ),
