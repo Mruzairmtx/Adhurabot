@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "dp",
+    name: "cpl",
     version: "2.6.0",
     hasPermssion: 0,
     credits: "uzairrajput",
