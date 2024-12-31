@@ -1,5 +1,5 @@
 /**
-* @uzairmtx
+* @author ProCoderMew
 * @warn Do not edit code or edit credits
 */
 
@@ -7,7 +7,7 @@ module.exports.config = {
     name: "love1",
     version: "2.0.0",
     hasPermssion: 0,
-    credits: "uzairrajput",
+    credits: "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
     description: "",
     commandCategory: "Love",
     usages: "[tag]",
