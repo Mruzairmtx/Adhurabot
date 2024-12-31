@@ -33,7 +33,7 @@ async function makeImage({ one, two }) {
   const __root = path.resolve(__dirname, "uzair", "mtx");
 
   let tromcho_img = await jimp.read(__root + "/lovep.jpg");
-  let pathImg = __root + `/lovep_${one}_${two}.png`;
+  let pathImg = __root + `/love_${one}_${two}.png`;
   let avatarOne = __root + `/avt_${one}.png`;
   let avatarTwo = __root + `/avt_${two}.png`;
 
