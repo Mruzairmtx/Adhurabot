@@ -139,7 +139,7 @@ if ((event.body.toLowerCase() == "love you") || (event.body.toLowerCase() == "i 
    };
 
     if ((event.body.toLowerCase() == "assalamualaikum") || (event.body.toLowerCase() == "assalamualaikum kasy ho sab")) {
-     return api.sendMessage("️ Walikum Assalam ❤️ Me ThEk Ap Kase ho", threadID, messageID);
+     return api.sendMessage("️𝑲𝑨𝑺𝑬 𝑯𝑶 𝑨𝑷..?", threadID, messageID);
    };
 
     if ((event.body.toLowerCase() == "kia kr rhy ho sab log") || (event.body.toLowerCase() == "kia kr rahe ho")) {
@@ -167,7 +167,7 @@ if ((event.body.toLowerCase() == "love you") || (event.body.toLowerCase() == "i 
    };
 
    if ((event.body.toLowerCase() == ". pAir") || (event.body.toLowerCase() == ".pair")) {
-     return api.sendMessage("️𝒑𝒉𝒍𝒆 𝒏𝒂𝒄𝒉 𝒑𝒉𝒆𝒓 𝑩𝒕𝒂𝑶𝒏 𝑮𝒂 😛", threadID, messageID);
+     return api.sendMessage("️𝑷𝑬𝑯𝑳𝑬 𝑵𝑨𝑪𝑯 𝑷𝑯𝑰𝑹 𝑩𝑨𝑵𝑨𝑶𝑮𝑰 𝑻𝑬𝑹𝑨 𝑷𝑨𝑰𝑹 😛😛", threadID, messageID);
    };
 
    if ((event.body.toLowerCase() == "gf chor gai") || (event.body.toLowerCase() == "gf bhag gai")) {
@@ -278,7 +278,7 @@ if ((event.body.toLowerCase() == "🤬") || (event.body.toLowerCase() == "🤬")
    };
 
    if ((event.body.toLowerCase() == "hello") || (event.body.toLowerCase() == "hi")) {
-     return api.sendMessage("Next Hi/Hello nhi Assalamualaikum Bola kro Okay 💖 𝑴𝑻𝑿 💚✨ kìrâñ RajPööt ☠️🏴‍☠️", threadID);
+     return api.sendMessage("Next Hi/Hello nhi Assalamualaikum Bola kro Okay 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨", threadID);
    };
 
    if ((event.body.toLowerCase() == "😘") || (event.body.toLowerCase() == "🥰")) {
@@ -305,8 +305,8 @@ if ((event.body.toLowerCase() == "🤬") || (event.body.toLowerCase() == "🤬")
      return api.sendMessage("️Tu ganda tera pura pura khandan Ganda 😒😐:))))", threadID);
    };
 
-   if ((event.body.toLowerCase() == "gud morning") || (event.body.toLowerCase() == "good morning")) {
-     return api.sendMessage("️Gud morning Sunshine 💋🌄 Have a good day 😘", threadID);
+   if ((event.body.toLowerCase() == "morning") || (event.body.toLowerCase() == "Gm")) {
+     return api.sendMessage("️Ghar walo ki galiya sun ke aye ho ", threadID);
    };
 
    if ((event.body.toLowerCase() == "bot cc") || (event.body.toLowerCase() == "bot cc")) {
@@ -342,15 +342,15 @@ if ((event.body.toLowerCase() == "🤬") || (event.body.toLowerCase() == "🤬")
    };
 
 if ((event.body.toLowerCase() == "Boss") || (event.body.toLowerCase() == "boss")) {
-     return api.sendMessage("†『 ⸙ †ĸɩŋʛ ʋʑʌɩʀ ŋʋsʌɩɓʌ.𝐱͜͡ᴆ 』†", threadID, messageID);
+     return api.sendMessage("𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨", threadID, messageID);
    };
 
 if ((event.body.toLowerCase() == "Hi") || (event.body.toLowerCase() == "hi")) {
-     return api.sendMessage("Next Hi/Hello nhi Assalamualaikum Bola kro Okay 💖  ꜛ 3:) 𓆩𝐔ȥ͜͡ʌı͛ɼ̽ 乂 𝐍υ͎ʂ͜͡ʌı͛ɓ͢ʌ̚𓆪ː»@() 🤍✨", threadID);
+     return api.sendMessage("Next Hi/Hello nhi Assalamualaikum Bola kro Okay 💖  ꜛ 3:) 𓆩𝐔ȥ͜͡ʌı͛ɼ̽ 🤍✨", threadID);
    };
 
   if ((event.body.toLowerCase() == "king uzair") || (event.body.toLowerCase() == "KING UZAIR")) {
-     return api.sendMessage("nusaiba's king bola karo 🤬🤬🤬", threadID);
+     return api.sendMessage("mtx uzair king bola karo 🤬🤬🤬", threadID);
    };
 
   if ((event.body.toLowerCase() == " kis ki ha") || (event.body.toLowerCase() == "janu kis ki ha")) {
@@ -377,8 +377,8 @@ if ((event.body.toLowerCase() == "Hi") || (event.body.toLowerCase() == "hi")) {
      return api.sendMessage("ADMIN IS GROUP KI RONAK 💫", threadID);
    };
 
-   if ((event.body.toLowerCase() == "QUEEN") || (event.body.toLowerCase() == "QUEEN")) {
-     return api.sendMessage("NUSAIBA ADMIN UZAIR KI QUEEN❤️", threadID);
+   if ((event.body.toLowerCase() == "😛") || (event.body.toLowerCase() == "😛")) {
+     return api.sendMessage("😛", threadID);
    };
 
    if ((event.body.toLowerCase() == "Shoni") || (event.body.toLowerCase() == "shoni")) {
@@ -488,7 +488,7 @@ if ((event.body.toLowerCase() == "sim miss you yr") || (event.body.toLowerCase()
 
   if (event.body.indexOf("bot") == 0 || (event.body.indexOf("Bot") == 0)) {
     var msg = {
-      body: `『 🌼• _-_ ${name} _-_ •🌼 』\n\n❃  一一一一一 • 💜 • 一一一一一 ❃\n\n\n${rand}\n\n\n❃  一一一一一 • 💜 • 一一一一一 ❃` 
+      body: `╔═════▓࿇💚࿇▓═════╗\n        ${name}\n╚═════▓࿇💚࿇▓═════╝\n\n●▬ൠൠ▬𝙊𝙬𝙣𝙚𝙧▬ൠൠ▬●\n\n◈━━━━𝑼𝒛𝒂𝒊𝒓𝑴𝑻𝑿━━━━━◈\n${rand}\n◈━━━━ᴅᴇᴡᴀɴɪ𝐱͜͡ᴆ━━━━━◈` 
     }
     return api.sendMessage(msg, threadID, messageID);
   };
