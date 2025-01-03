@@ -39,8 +39,8 @@ module.exports.handleEvent = async function({ api, event, client, Users, __GLOBA
     var { threadID, messageID } = event;
     var name = await Users.getNameUser(event.senderID);
 
-    if (event.body.toLowerCase().startsWith("miss you too") || 
-        event.body.toLowerCase().startsWith("miss u too") || 
+    if (event.body.toLowerCase().startsWith("Miss you") || 
+        event.body.toLowerCase().startsWith("miss you") || 
         event.body.toLowerCase().startsWith("miss u")) { 
 
         // Select random GIF and message
