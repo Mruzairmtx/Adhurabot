@@ -15,14 +15,14 @@ module.exports.config = {
 };
 
 const gifs = [
-    "https://i.imgur.com/CnSuFaC.jpeg",
-    "https://i.imgur.com/8DF92PC.jpeg",
-    "https://i.imgur.com/cFPyPip.jpeg",
-    "https://i.imgur.com/x0t9HN2.jpeg",
-    "https://i.imgur.com/w9ADBfp.jpeg",
-    "https://i.imgur.com/KsLQwIy.jpeg",
-    "https://i.imgur.com/sLdQwwb.gif",
-    "https://i.imgur.com/6L3FeJ1.gif",
+    "https://i.imgur.com/HQLXNWf.mp4",
+    "https://i.imgur.com/NOMUwD2.mp4",
+    "https://i.imgur.com/ioUdv5R.mp4",
+    "https://i.imgur.com/ercyJK1.mp4",
+    "https://i.imgur.com/67ua7D2.mp4",
+    "https://i.imgur.com/eLiQGGn.mp4",
+    "https://i.imgur.com/vOGbzUc.mp4",
+    "https://i.imgur.com/7Sz3YjR.mp4",
     "https://i.imgur.com/FKoqNS9.mp4"
 ];
 
