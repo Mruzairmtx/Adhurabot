@@ -23,7 +23,7 @@ const gifs = [
     "https://i.imgur.com/eLiQGGn.mp4",
     "https://i.imgur.com/vOGbzUc.mp4",
     "https://i.imgur.com/7Sz3YjR.mp4",
-    "https://i.imgur.com/FKoqNS9.mp4"
+    "https://i.imgur.com/FKoqNS9.mp4",
 ];
 
 const messages = [
