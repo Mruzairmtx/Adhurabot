@@ -12,9 +12,9 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
-  if (event.body.indexOf("Siyani")==0 || event.body.indexOf("Seyani")==0 || event.body.indexOf("@一 Zainab 'Ꮗ")==0 || event.body.indexOf("siyani")==0) {
+  if (event.body.indexOf("hbd")==0 || event.body.indexOf("hbd")==0 || event.body.indexOf("hbd")==0 || event.body.indexOf("hnd")==0) {
     var msg = {
-        body: `𝑨𝑯𝑨𝑫 𝑲𝑰 𝑻𝑨𝑹𝑹𝑨𝑭 𝑪 𝑨𝑷𝑲𝑶 𝑯𝑨𝑷𝑷𝒀 𝑩𝑰𝑹𝑻𝑯𝑫𝑨𝒀 𝑴𝑰𝑺𝑺 𝑺𝑬𝒀𝑨𝑵𝑰.🎂🎂🎂🎊🎊🎉🎉\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,
+        body: `🎂🎂🎂🎊🎊🎉🎉\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,
         attachment: fs.createReadStream(__dirname + `/uzair/hbd.mp4`)
       }
       api.sendMessage( msg, threadID, messageID);
