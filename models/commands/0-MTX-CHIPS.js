@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
         if (event.body.indexOf("chips")==0 || event.body.indexOf("Chips")==0 || event.body.indexOf("CHIPS ")==0 || event.body.indexOf("Chipas")==0) {
                 var msg = {
                                 body: "𝐘𝐚𝐚 𝐋𝐨𝐨 𝐁𝐚𝐁𝐲 𝐜𝐇𝒊𝑷𝒔\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨",
-                                attachment: fs.createReadStream(__dirname + `/uzair/chips.jpg`)
+                                attachment: fs.createReadStream(__dirname + `/uzair/party.mp4`)
                         }
                         api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🥟", event.messageID, (err) => {}, true)
