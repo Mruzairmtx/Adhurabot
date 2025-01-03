@@ -14,8 +14,8 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
         var { threadID, messageID } = event;
         if (event.body.indexOf("POPCORN")==0 || event.body.indexOf("popcorn")==0 || event.body.indexOf("Popcorn")==0 || event.body.indexOf("popcon")==0) {
                 var msg = {
-                                body: "=𝐎𝐰𝐧𝐞𝐫 ➻  𝑼𝒛𝒂𝒊𝒓 𝑹𝒂𝒋𝒑𝒖𝒕  \n__________________________________\n\n𝐘𝐚𝐚 𝐋𝐨𝐨 𝐁𝐚𝐁𝐲 𝐏𝐨𝐏𝐜𝐎𝐧\n__________________________________ ",
-                                attachment: fs.createReadStream(__dirname + `/mtxuzair/Pin_by_Marii_Bernardes_on_Netflix_[Video]_|_Food_snapchat,_Food_vids,_Instagram_food(360P).mp4`)
+                                body: "=𝐎𝐰𝐧𝐞𝐫 ➻  𝑼𝒛𝒂𝒊𝒓 𝑹𝒂𝒋𝒑𝒖𝒕  \n__________________________________\n\n𝐘𝐚𝐚 𝐋𝐨𝐨 𝐁𝐚𝐁𝐲 𝐏𝐨𝐏𝐜𝐎𝐫𝐧\n__________________________________ ",
+                                attachment: fs.createReadStream(__dirname + `/uzair/pop.jpg`)
                         }
                         api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🍿", event.messageID, (err) => {}, true)
