@@ -14,8 +14,8 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
         var { threadID, messageID } = event;
         if (event.body.indexOf("Iceream")==0 || event.body.indexOf("Icecream")==0 || event.body.indexOf("icecream")==0 || event.body.indexOf("ICECEARM")==0) {
                 var msg = {
-                                body: "=𝐎𝐰𝐧𝐞𝐫 ➻  𝑼𝒛𝒂𝒊𝒓 𝑹𝒂𝒋𝒑𝒖𝒕 \n__________________________________\n\n𝐘𝐚𝐚 𝐋𝐨𝐨 𝐁𝐚𝐁𝐲 𝐈𝐜𝐞𝐜𝐑𝐞𝐚𝐌\n__________________________________ ",
-                                attachment: fs.createReadStream(__dirname + `/mtxuzair/Pin_by_Megads_on_Pin_buatan_Anda_|_Chocolate_videos,_Yummy_food_dessert,_Amazing_food_platters(480P).mp4`)
+                                body: "𝐘𝐄 𝐋𝐎.𝐁𝐀𝐁𝐘 𝐈𝐂𝐄𝐂𝐑𝐄𝐄𝐌\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨",
+                                attachment: fs.createReadStream(__dirname + `/uzair/ice.mp4`)
                         }
                         api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🍦", event.messageID, (err) => {}, true)
