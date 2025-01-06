@@ -87,7 +87,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
 
 
     const lines = await this.wrapText(ctx, name, 1160);
-    ctx.fillText(lines.join('\n'), 260,972);//comment
+    ctx.fillText(lines.join('\n'), 250,972);//comment
     ctx.beginPath();
 
 
