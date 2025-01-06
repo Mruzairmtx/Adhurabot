@@ -96,7 +96,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
   const imageBuffer = canvas.toBuffer();
   fs.writeFileSync(pathImg, imageBuffer);
   fs.removeSync(pathAvt1);
-  return api.sendMessage({ body: `-𝐇𝐚𝐩𝐩𝐲 𝐁𝐢𝐫𝐭𝐡𝐝𝐚𝐲 🎂🎂🎂\n•—»✨${name}✨«—•\n-𝐌𝐚𝐧𝐲 𝐌𝐚𝐧𝐲 𝐇𝐚𝐩𝐩𝐲 𝐑𝐞𝐭𝐮𝐫𝐧𝐬 𝐎𝐟 𝐓𝐡𝐞 𝐃𝐚𝐲.✨🧡 " ${global.config.BOTNAME} " ✨🧡`, attachment: fs.createReadStream(pathImg) },
+  return api.sendMessage({ body: `-𝐇𝐚𝐩𝐩𝐲 𝐁𝐢𝐫𝐭𝐡𝐝𝐚𝐲 🎂🎂🎂\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n•—»✨${name}✨«—•\n-𝐌𝐚𝐧𝐲 𝐌𝐚𝐧𝐲 𝐇𝐚𝐩𝐩𝐲 𝐑𝐞𝐭𝐮𝐫𝐧𝐬 𝐎𝐟 𝐓𝐡𝐞 𝐃𝐚𝐲.✨🧡\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n" ${global.config.BOTNAME} " ✨🧡`, attachment: fs.createReadStream(pathImg) },
       event.threadID,
       () => fs.unlinkSync(pathImg),
       event.messageID);
