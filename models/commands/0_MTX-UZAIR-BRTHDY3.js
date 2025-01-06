@@ -86,7 +86,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
     ctx.textAlign = "start";
 
 
-    const lines = await this.wrapText(ctx, name, 1160);
+    const lines = await this.wrapText(ctx, name, 1140);
     ctx.fillText(lines.join('\n'), 250,972);//comment
     ctx.beginPath();
 
