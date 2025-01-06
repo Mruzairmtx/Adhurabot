@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "birthday3",
+  name: "birthday4",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "uzairrajput",
@@ -91,7 +91,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
     ctx.beginPath();
 
 
-  ctx.drawImage(baseAvt1, 180, 150, 160, 226);
+  ctx.drawImage(baseAvt1, 160, 150, 160, 200);
 
   const imageBuffer = canvas.toBuffer();
   fs.writeFileSync(pathImg, imageBuffer);
