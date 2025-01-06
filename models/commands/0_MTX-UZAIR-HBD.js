@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
-  if (event.body.indexOf("@Horiya Hiriya ")==0 || event.body.indexOf("Happy Birthday")==0 || event.body.indexOf("happy birthday")==0 || event.body.indexOf("HAPPY BIRTHDAY")==0) {
+  if (event.body.indexOf("@Horiya Hiriya ")==0 || event.body.indexOf("HOriya Hiriya")==0 || event.body.indexOf("happy birthday")==0 || event.body.indexOf("HAPPY")==0) {
     var msg = {
         body: `🎂🎂🎂🎊🎊🎉🎉\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,
         attachment: fs.createReadStream(__dirname + `/uzair/horiya.jpeg`)
