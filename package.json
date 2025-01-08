@@ -1,8 +1,8 @@
 {
-		"name": "SHAAN",
+		"name": "UZAIR-RAJPUT",
 		"version": "10.1.1",
-		"description": "𝐀 𝐒𝐈𝐌𝐏𝐋𝐄 𝐌𝐄𝐒𝐒𝐄𝐍𝐆𝐄𝐑 𝐁𝐎𝐓  𝐌𝐀𝐃𝐄 𝐁𝐘 SHAAN 🍎",
-		"main": "SHAAN.js",
+		"description": "𝐀 𝐒𝐈𝐌𝐏𝐋𝐄 𝐌𝐄𝐒𝐒𝐄𝐍𝐆𝐄𝐑 𝐁𝐎𝐓  𝐌𝐀𝐃𝐄 𝐁𝐘 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨",
+		"main": "𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿.js",
 		"engines": {
 				"node": "20.x",
 				"npm": "10.0.0"
@@ -19,14 +19,14 @@
 		"keywords": [
 				"bot",
 				"facebook",
-				"projectarif",
+				"projectuzair",
 				"messenger",
 				"javasvript",
-				"SHAAN",
-				"prince",
-				"mental"
+				"UZAIR-RAJPUT",
+				"uzairladla",
+				"uzairmtx"
 		],
-		"author": "SHAAN 🍎",
+		"author": "UZAIRMTX",
 		"license": "GPL-3.0",
 		"bugs": {
 				"url": "https://github.com/SHAAN-11/SHAAN-bot/issues"
