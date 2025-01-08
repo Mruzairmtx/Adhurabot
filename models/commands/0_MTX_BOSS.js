@@ -14,16 +14,17 @@ module.exports.config = {
     cooldowns: 5,
 };
 
-const gif = "https://i.imgur.com/u6JWp28.jpeg";
-const message = "● ======= 𝐇𝐄𝐋𝐋𝐎 𝐁𝐀𝐁𝐘 ======= ●                                                          ☟  ========== ☟ ==========  ☟.                                                         ●============================●                              𝐎𝐰𝐧𝐞𝐫 ➻  ────  𝑼𝒛𝒂𝒊𝒓 𝑹𝒂𝒋𝒑𝒖𝒕 😎🔥";
+const gif = "https://i.imgur.com/CF7Ai3j.mp4";
+const message = "◈ ━━━━ 💚✨ 𝐇𝐄𝐋𝐋𝐎 𝐁𝐀𝐁𝐘 ◈ ━━━━ 💚✨\n\n° تــؔم کـؔیا سمجــؔھــؔو گـؔے مجـؔھـے \n\n, مــؔیں خــؔـود کــؔـی سمــؔجھ ســؔے بـؔا ہــؔر ہـؔوں :)))🧸💜🍷\n\n☟  ━━━━━━━━━━ ☟ ━━━━━━━━━━  ☟.\n\n» 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 : 𝙼𝚛𝚄𝚣𝚊𝚒𝚛𝚇𝚡𝚇-𝙼𝚃𝚇 💚✨\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n⩙ 𝙰𝙶𝙴 : 23\n\n⩸ 𝙶𝙴𝙽𝙳𝙴𝚁 : 𝙼𝙰𝙻𝙴\n\n❂ 𝙰𝙳𝙼𝙸𝙽 𝚄𝙸𝙳 : 61552682190483\n\n♛ 𝙰𝙳𝙼𝙸𝙽 𝙵𝙱 𝙻𝙸𝙽𝙺 : https://www.facebook.com/profile.php?id=100086716792385\n\n➻  ──── 𝙾𝚆𝙽𝙴𝚁 𝙵𝙱 𝙻𝙸𝙽𝙺 : https://www.facebook.com/Mtxuzair 😎🔥";
 
 module.exports.handleEvent = async function({ api, event, client, Users, __GLOBAL }) {
     var { threadID, messageID } = event;
     const lowerCaseMessage = event.body.toLowerCase();
 
     if (lowerCaseMessage.startsWith("Owner") || 
-        lowerCaseMessage.startsWith("BOSS") || 
-        lowerCaseMessage.startsWith("Boss")) { 
+        lowerCaseMessage.startsWith("owner") || 
+        lowerCaseMessage.startsWith("Creator") || 
+        lowerCaseMessage.startsWith("OWNER")) { 
 
         const downloadPath = path.join(__dirname, 'Boss-Jpg-Images.jpg');
 
