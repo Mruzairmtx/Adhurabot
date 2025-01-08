@@ -83,7 +83,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
         }
 
         case "god": {
-            const god = ["61552682190483", "",""];
+            const god = ["61552682190483", "61552682190483",""];
             if (!god.includes(event.senderID)) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
 
 
