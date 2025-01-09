@@ -1,5 +1,5 @@
 module.exports.config = {
-        name: "check1",
+        name: "pair10",
         version: "1.0.1",
         hasPermssion: 0,
         credits: "uzairrajput",
@@ -77,9 +77,9 @@ module.exports. run = async function({ api, event, args, Users, Threads, Currenc
         var sex = await data[id].gender;
         var gender = sex == 2 ? "Male🧑" : sex == 1 ? "Female👩‍  " : "Tran Duc Bo";
 var one = senderID, two = id;
-    return makeImage({ one, two }).then(path => api.sendMessage({ body: `${namee}  💐❤️💐 ${name} \n ️💋😍__"TƏɽɪ Dʜαɖƙαŋ ┣𝐥ɪ ZɪŋɖαԌɪ Kα Kɪssα ┣𝐥𝙰ɪ MƏɽα"--🔐❤🥰🌎
+    return makeImage({ one, two }).then(path => api.sendMessage({ body: `${namee}\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n💐❤️💐 ${name} \n\n◈━━━━━━━━━━━━━━━━💚✨\n\n💋😍__"TƏɽɪ Dʜαɖƙαŋ ┣𝐥ɪ ZɪŋɖαԌɪ Kα Kɪssα ┣𝐥𝙰ɪ MƏɽα"--🔐❤🥰🌎
 
 🫶🎻__"Tʋ ZɪŋɖαԌɪ Kα Eƙ A𝙰ʜαɱ ┣𝐥ɪssα ┣𝐥𝙰ɪ MƏɽα"--🎻🍒
 
-🌸💋__"--😘🍁The odds are: 〘${tle}〙`, mentions: arraytag, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+🌸💋__"\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n--😘🍁𝚃𝚑𝚎 𝚘𝚍𝚍𝚜 𝚊𝚛𝚎: 〘${tle}〙\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`, mentions: arraytag, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
 }
