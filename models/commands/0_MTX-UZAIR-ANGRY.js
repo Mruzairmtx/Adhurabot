@@ -12,8 +12,8 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
         var { threadID, messageID } = event;
         let react = event.body.toLowerCase();
-        if(react.includes("angree") ||
-     react.includes("ANGREE") || react.includes("Angree") || react.includes("Gussa") ||
+        if(react.includes("angry") ||
+     react.includes("ANGRY") || react.includes("Angry") || react.includes("Gussa") ||
 react.includes("gussa") ||
 react.includes("hyper")) {
                 var msg = {
