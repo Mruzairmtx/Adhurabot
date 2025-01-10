@@ -14,13 +14,13 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
         let react = event.body.toLowerCase();
         if(react.includes("Dinner") ||
      react.includes("dinner") || react.includes("DINNER") || react.includes("KHANA") ||
-react.includes("Khana") ||
+react.includes("Kahna") ||
 react.includes("khana")) {
                 var msg = {
-                                body: `=𝐎𝐰𝐧𝐞𝐫 ➻  𝑼𝒛𝒂𝒊𝒓 𝑹𝒂𝒋𝒑𝒖𝒕  \n__________________________________\n\n𝐋𝐨 𝐁𝐚𝐁𝐲\n__________________________________`,attachment: fs.createReadStream(__dirname + `/mtxuzair/received_472683075271350.mp4`)
+                                body: `𝐋𝐨 𝐁𝐚𝐁𝐲\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,attachment: fs.createReadStream(__dirname + `/uzair/khna.mp4`)
                         }
                         api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("💋", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🥣", event.messageID, (err) => {}, true)
                 }
         }
         module.exports.run = function({ api, event, client, __GLOBAL }) {
