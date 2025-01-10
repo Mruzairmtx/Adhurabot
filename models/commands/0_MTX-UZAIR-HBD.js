@@ -12,13 +12,13 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
-  if (event.body.indexOf("@Horiya Hiriya ")==0 || event.body.indexOf("Happy Birthday")==0 || event.body.indexOf("happy birthday")==0 || event.body.indexOf("Birthday")==0) {
+  if (event.body.indexOf("Dewani")==0 || event.body.indexOf("diwani")==0 || event.body.indexOf("Dewani")==0 || event.body.indexOf("diwani")==0) {
     var msg = {
-        body: `🎂🎂🎂🎊🎊🎉🎉\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,
-        attachment: fs.createReadStream(__dirname + `/uzair/horiya.jpeg`)
+        body: `𝐈'𝐌 𝐀𝐆𝐀𝐈 😅😅\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,
+        attachment: fs.createReadStream(__dirname + `/uzair/dk.mp3`)
       }
       api.sendMessage( msg, threadID, messageID);
-    api.setMessageReaction("🥳", event.messageID, (err) => {}, true)
+    api.setMessageReaction("😝", event.messageID, (err) => {}, true)
     }
   }
   module.exports.run = function({ api, event, client, __GLOBAL }) {
