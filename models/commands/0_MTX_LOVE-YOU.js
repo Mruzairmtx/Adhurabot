@@ -16,11 +16,11 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("Love you") ||
-     react.includes("LOVE YOU") || react.includes("love you") || react.includes("I love") ||
-react.includes("I LOVE") ||
-react.includes("i love")) {
+     react.includes("LOVE YOU") || react.includes("love you") || react.includes("I love you") ||
+react.includes("I LOVE YOU") ||
+react.includes("i love you")) {
 		var msg = {
-				body: `=𝐎𝐰𝐧𝐞𝐫 ➻  𝑼𝒛𝒂𝒊𝒓 𝑹𝒂𝒋𝒑𝒖𝒕  \n__________________________________\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n__________________________________`,attachment: fs.createReadStream(__dirname + `/mtxuzair/793696f8979ec67925056894898af32a.gif`)
+				body: `🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,attachment: fs.createReadStream(__dirname + `/uzair/love.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🙈", event.messageID, (err) => {}, true)
