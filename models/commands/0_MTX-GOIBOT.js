@@ -114,8 +114,8 @@ if ((event.body.toLowerCase() == "love you") || (event.body.toLowerCase() == "i 
      return api.sendMessage("️Dafa Hoja Group Sa Tharkiya Na MaR Edr🙄", threadID, messageID);
    };
 
-   if ((event.body.toLowerCase() == "maine kon sa thark mara") || (event.body.toLowerCase() == "maine kia kara")) {
-     return api.sendMessage("️To phr Ya Kia Hai phr ThArk nhi To 🤣", threadID, messageID);
+   if ((event.body.toLowerCase() == "bf") || (event.body.toLowerCase() == "Bf")) {
+     return api.sendMessage("️𝐌𝐄𝐑𝐄 𝐋𝐈𝐘𝐄 𝐁𝐅 𝐊𝐀 𝐌𝐀𝐓𝐋𝐀𝐁 𝐁𝐎𝐘𝐅𝐑𝐈𝐄𝐍𝐃 𝐍𝐇𝐈 𝐁𝐑𝐄𝐀𝐊-𝐅𝐀𝐒𝐓 𝐇𝐎𝐓𝐀 𝐇𝐀𝐈 🍳😋😋", threadID, messageID);
    };
 
    if ((event.body.toLowerCase() == "meRi jan ho") || (event.body.toLowerCase() == "tm meRi jan ho")) {
