@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "wow",
+	name: "dafa",
     version: "1.0.0",
 	hasPermssion: 0,
 	credits: "uzairrajput", 
