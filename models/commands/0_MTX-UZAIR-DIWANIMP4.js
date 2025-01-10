@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-  name: "hbd",
+  name: "dmp4",
     version: "1.0.1",
   hasPermssion: 0,
   credits: "uzairrajput", 
