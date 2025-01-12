@@ -26,21 +26,22 @@ module.exports.run = async function({ api, event,Threads, Users }) {
 
 
         let Avatar = (await axios.get( `https://graph.facebook.com/${event.senderID}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data; 
-            fs.writeFileSync( __dirname + "/uzair/uzair.png", Buffer.from(Avatar, "utf-8") );
+            fs.writeFileSync( __dirname + "/cache/avt.png", Buffer.from(Avatar, "utf-8") );
 
         let gifLove = (await axios.get(gifCute[Math.floor(Math.random() * gifCute.length)], { responseType: "arraybuffer" } )).data; 
             fs.writeFileSync( __dirname + "/uzair/giflove.png", Buffer.from(gifLove, "utf-8") );
 
         let Avatar2 = (await axios.get( `https://graph.facebook.com/${id}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data;
-            fs.writeFileSync( __dirname + "/uzair/uzair.png", Buffer.from(Avatar2, "utf-8") );
+            fs.writeFileSync( __dirname + "/uzair/avt2.png", Buffer.from(Avatar2, "utf-8") );
 
         var imglove = [];
 
-              imglove.push(fs.createReadStream(__dirname + "/uzair/uzair.png"));
+              imglove.push(fs.createReadStream(__dirname + "/uzair/avt.png"));
               imglove.push(fs.createReadStream(__dirname + "/uzair/giflove.png"));
-              imglove.push(fs.createReadStream(__dirname + "/uzair/uzair.png"));
+              imglove.push(fs.createReadStream(__dirname + "/uzair/avt2.png"));
 
         var msg = {body: `🅢𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋 🅟𝐀𝐈𝐑𝐈𝐍𝐆
 𝐇𝐎𝐏𝐄 𝐘𝐎𝐔 𝐁𝐎𝐓𝐇 𝐖𝐈𝐋𝐋 𝐒𝐓𝐎𝐏 𝐅𝐋𝐈𝐑𝐓𝐈𝐍𝐆 ⊂◉‿◉\n━━━━━━━━━━━━━━━━━━ ${namee} 💓 ${name}\n━━━━━━━━━━━━━━━━━━\n➥ 𝐃𝐎𝐔𝐁𝐋𝐄 𝐑𝐀𝐓𝐈𝐎: ${tle}%\n━━━━━━━━━━━━━━━━━━\n𝙊𝙬𝙣𝙚𝙧 𝐌𝐑 𝐔𝐙𝐀𝐈𝐑 𝐑𝐀𝐉𝐏𝐔𝐓-𝐌𝐓𝐗`, mentions: arraytag, attachment: imglove}
         return api.sendMessage(msg, event.threadID, event.messageID)
-                           }
+                             }
+                             
