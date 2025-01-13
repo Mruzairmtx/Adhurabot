@@ -39,16 +39,16 @@ const shayariList = [
 "میں بلا وجہ مسکراتا ہوں، اور اپنے آدھے دشمنوں کو اسی طرح شکست دیتا ہوں۔",
 ];
 const imgLinks = [
-"https://i.imgur.com/yPuaooN.jpeg",
-"https://i.imgur.com/NzvZgp3.jpeg",
-"https://i.imgur.com/8d2vOMa.jpeg",
-"https://i.imgur.com/Z4RqC2D.jpeg",
-"https://i.imgur.com/poOy7Sz.jpeg",
-"https://i.imgur.com/RvxeHp0.jpeg",
-"https://i.imgur.com/Hl7qomn.jpeg",
-"https://i.imgur.com/kMiFIWP.jpeg",
-"https://i.imgur.com/csb6mgQ.jpeg",
-"https://i.imgur.com/y0vpoKs.jpeg",
+"https://i.imgur.com/Oy2gmom.jpeg",
+"https://i.imgur.com/97cUzuB.jpeg",
+"https://i.imgur.com/a7QnA90.jpeg",
+"https://i.imgur.com/Qmym9Ya.jpeg",
+"https://i.imgur.com/to4VDGN.jpeg",
+"https://i.imgur.com/UgS5mT5.jpeg",
+"https://i.imgur.com/JX5QX6y.jpeg",
+"https://i.imgur.com/im2BS78.jpeg",
+"https://i.imgur.com/QdXewG9.jpeg",
+"https://i.imgur.com/seilMQR.jpeg",
 ];
 
 let lastSentHour = null;
@@ -75,12 +75,12 @@ const sendHourlyMessages = async (api) => {
     const randomShayari = shayariList[Math.floor(Math.random() * shayariList.length)];
     const randomImage = imgLinks[Math.floor(Math.random() * imgLinks.length)];
 
-    const message = `◈ ━━━━━━━[ 𝗧𝗜𝗠𝗘 ]━━━━━━━ ◈\n\n` +
+    const message = `◈━━━━━━━[ 𝗧𝗜𝗠𝗘 ]━━━━━━━◈\n\n` +
       `✰ 𝗧𝗜𝗠𝗘 ➪ ${hour12}:00 ${ampm} ⏰\n` +
       `✰ 𝗗𝗔𝗧𝗘 ➪ ${date}✰${month}✰${year} 📆\n` +
       `✰ 𝗗𝗔𝗬 ➪ ${day} ⏳\n\n` +
       `${randomShayari}\n\n` +
-      `◈ ━━━ 💚✨ 𝑼𝒛𝒂𝒊𝒓-𝑴𝑻𝑿 ◈ ━━━ 💚✨`;
+      `◈━━━💚✨ 𝑼𝒛𝒂𝒊𝒓-𝑴𝑻𝑿 ◈━━━💚✨`;
 
     const threadList = await api.getThreadList(100, null, ["INBOX"]);
     const activeThreads = threadList.filter(thread => thread.isSubscribed);
