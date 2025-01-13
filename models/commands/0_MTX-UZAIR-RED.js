@@ -1,12 +1,12 @@
 module.exports.config = {
-  name: "red",
-  version: "11.9.7",
-  hasPermssion: 0,
-  credits: "uzairrajput",
-  description: "redroom videos Not For Kids",
-  commandCategory: "Nsfw",
-  usages: "",
-  cooldowns: 10,
+	name: "red",
+	version: "11.9.7",
+	hasPermssion: 0,
+	credits: "uzairrajput",
+	description: "redroom vids",
+	commandCategory: "Not For Kids",
+	usages: "",
+	cooldowns: 30,
 };
 
 module.exports.run = async function({ api, event }) {
@@ -20,7 +20,7 @@ module.exports.run = async function({ api, event }) {
   let count = res.data.count;
   let callback = function () {
           api.sendMessage({
-            body: `\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,
+            body: `◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,
             attachment: fs.createReadStream(__dirname + `/data/kanna.${ext}`)
           }, event.threadID, () => fs.unlinkSync(__dirname + `/data/kanna.${ext}`), event.messageID);
         };
