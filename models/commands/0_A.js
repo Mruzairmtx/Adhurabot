@@ -1,5 +1,5 @@
 module.exports.config = {
-        name: "piya",
+        name: "air",
         version: "1.0.1",
         hasPermssion: 0,
         credits: "uzairrajput",
