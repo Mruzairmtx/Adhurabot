@@ -4,7 +4,7 @@ module.exports.config = {
   name: 'replitstalk',
   version: '1.0.0',
   hasPermssion: 0,
-  credits: 'Loid Butter',
+  credits: 'uzairrajput',
   description: 'Retrieve user information from Replit',
   commandCategory: '...',
   cooldowns: 5
