@@ -73,8 +73,8 @@ module.exports.run = async function ({ event, api, args, Currencies }) {
     var one = senderID, two = mention[0];
   await Currencies.increaseMoney(event.senderID, parseInt(hc*rd));
   
-  if (!two) return api.sendMessage(`Please tag 1 person\n\nHow to use?\n${global.config.PREFIX}kiss <@tag>\n\nExample:\n${global.config.PREFIX}kiss @name\n\nCreated by: 𝑴𝑻𝑿 💚✨ (Kìrâñ RajPööt ☠️🏴‍☠️)`, threadID, messageID);
+  if (!two) return api.sendMessage(`Please tag 1 person\n\nHow to use?\n${global.config.PREFIX}kiss <@tag>\n\nExample:\n${global.config.PREFIX}kiss @name\n\nCreated by: 𝑴𝑻𝑿 💚✨ (kìrâñ RajPööt ☠️🏴‍☠️)`, threadID, messageID);
   else {
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: `◈━━━━━━━━━━━━━━━━━💚✨\nDur hai isliye miss kar Rahe hai... Pass hote tw kiss kar rahe hote...🥰😘\n◈━━━━━━━━━━━━━━━━━💚✨`, attachment: fs.createReadStream(path)}, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: `${ae[Math.floor(Math.random() * ae.length)]}\nYour sympathy after being stolen is ${hc} %\n + ${((hc)*rd)} $`, attachment: fs.createReadStream(path)}, threadID, () => fs.unlinkSync(path), messageID));
   }
   }
