@@ -26,7 +26,7 @@ module.exports.run = async function({ api, event,Threads, Users }) {
 
 
         let Avatar = (await axios.get( `https://graph.facebook.com/${event.senderID}/picture?width=512&height=512&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: "arraybuffer" } )).data; 
-            fs.writeFileSync( __dirname + "/cache/avt.png", Buffer.from(Avatar, "utf-8") );
+            fs.writeFileSync( __dirname + "/uzair/avt.png", Buffer.from(Avatar, "utf-8") );
 
         let gifLove = (await axios.get(gifCute[Math.floor(Math.random() * gifCute.length)], { responseType: "arraybuffer" } )).data; 
             fs.writeFileSync( __dirname + "/uzair/giflove.png", Buffer.from(gifLove, "utf-8") );
