@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "malnews",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "ZiaRein",
+	credits: "uzairrajput",
 	description: "lastest aninews",
 	commandCategory: "anime",
 	usages: " ",
