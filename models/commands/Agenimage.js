@@ -1,8 +1,8 @@
 module.exports.config = {
-  name: "genmage",
+  name: "pic",
   version: "1.0.",
   hasPermssion: 0,
-  credits: "jameslim",
+  credits: "uzair",
   description: "( 𝙂𝙚𝙣𝙚𝙧𝙖𝙩 𝘼𝙄 𝙞𝙢𝙖𝙜𝙚𝙨 )",
   commandCategory: "create-images",
   usages: "( 𝖨𝗆𝖺𝗀𝗂𝗇𝖾 𝖨𝗆𝖺𝗀𝖾 )",
@@ -20,6 +20,6 @@ let path = __dirname + `/cache/poli.png`;
   })).data;
   fs.writeFileSync(path, Buffer.from(poli, "utf-8"));
   api.sendMessage({
-    body: "⏳𝐻𝑒𝑟𝑒'𝑠 𝑦𝑜𝑢𝑟 𝑟𝑒𝑞𝑢𝑒𝑠𝑡...",
+    body: "⏳𝐻𝑒𝑟𝑒'𝑠 𝑦𝑜𝑢𝑟 𝑟𝑒𝑞𝑢𝑒𝑠𝑡...\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨",
     attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID);
 };
