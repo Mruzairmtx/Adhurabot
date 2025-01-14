@@ -7,7 +7,7 @@ module.exports.config = {
   name: "ids",
   version: "2.0.0",
   hasPermission: 0,
-  credits: "Blue", // Special Thanks to Yukihira Soma aka Anjelo for the idea pero actually sya talaga gumawa crinedits lang sakin konte lang ambag ko dito
+  credits: "uzairrajput", // Special Thanks to Mr Uzair Rajput Mtx
   description: "User and group id in one file",
   commandCategory: "box",
   usages: "allid (mention user)",
@@ -52,7 +52,7 @@ module.exports.run = async function ({ api, event }) {
     return api.sendMessage(message + infoList.join('\n'), event.threadID);
   } else {
     const message = `┌────── •✧• ──────┐ WELCOME TO THREAD ID AND USER ID YOU CAN MENTION THE MEMBER THAT YOU WANT TO KNOW THERE UID.
- └────── •✧• ──────┘\n\n  ┌───── •✧• ─────┐\n            Thread ID (tid):\n        ${tid}\n└───── •✧• ─────┘\n  ┌───── •✧• ─────┐\n            User Name:\n       ${userName}\n└───── •✧• ─────┘\n┌───── •✧• ─────┐\n           User ID (uid):\n      ${uid}\n└───── •✧• ─────┘\nFacebook link: https://www.facebook.com/${facebookLink}\nFacebook Uid: https://www.facebook.com/${uid}\nTime (Asia/Manila):└───── •✧• ─────┘\n${gio}`;
+ └────── •✧• ──────┘\n\n  ┌───── •✧• ─────┐\n            Thread ID (tid):\n        ${tid}\n└───── •✧• ─────┘\n  ┌───── •✧• ─────┐\n            User Name:\n       ${userName}\n└───── •✧• ─────┘\n┌───── •✧• ─────┐\n           User ID (uid):\n      ${uid}\n└───── •✧• ─────┘\nFacebook link: https://www.facebook.com/${facebookLink}\nFacebook Uid: https://www.facebook.com/${uid}\nTime (Asia/Karachi):└───── •✧• ─────┘\n${gio}`;
     return api.sendMessage(message, event.threadID);
   }
 };
