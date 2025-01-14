@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "kiro",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "John Arida",
+	credits: "uzairrajput",
 	description: "Kiro Tweet post",
 	commandCategory: "edit-img",
 	usages: "[text]",
