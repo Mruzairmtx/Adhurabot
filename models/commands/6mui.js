@@ -2,7 +2,7 @@ module.exports.config = {
   name: "6mui",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "BLACK",
+  credits: "uzairrajput",
   description: "Random 6-pack photos",
   commandCategory: "Random-IMG",
   usages: "6mui",
@@ -137,6 +137,6 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/vn3vNsi.jpg",
 "https://i.imgur.com/aV4WVsq.jpg"
      ];
-     var callback = () => api.sendMessage({body:`Less Re-Energising nha -.-`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+     var callback = () => api.sendMessage({body:`25 𝐊𝐈 𝐐𝐀𝐌𝐀𝐑 25 𝐊𝐀 𝐒𝐄𝐄𝐍𝐀 𝐌𝐔𝐉𝐇𝐒𝐄 𝐌𝐈𝐋𝐎 𝐌𝐄 𝐇𝐎 𝐉𝐇𝐎𝐍 𝐒𝐄𝐍𝐀 🏋️‍♂️🏋️‍♂️\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝑨𝑫𝑬 𝑩𝒀\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 ◈ ──── 💚✨`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
