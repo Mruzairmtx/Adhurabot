@@ -6,11 +6,11 @@ exports.config = {
 
   hasPermssion: 0,
 
-  credits: 'DC-Nam',
+  credits: 'uzairrajput',
 
-  description: 'Tăng chất lượng ảnh lên 4k',
+  description: 'تصویر کے معیار کو 4k تک بڑھائیں۔',
 
-  commandCategory: 'Ảnh',
+  commandCategory: 'تصویر',
 
   usages: '[image]',
 
