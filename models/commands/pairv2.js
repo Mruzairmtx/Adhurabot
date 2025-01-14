@@ -60,10 +60,8 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
   var tile = djtme[Math.floor(Math.random() * djtme.length)];
 
   var background = [
-  "https://i.postimg.cc/wjJ29HRB/background1.png",
-  "https://i.postimg.cc/zf4Pnshv/background2.png",
-  "https://i.postimg.cc/5tXRQ46D/background3.png"
-  ];
+  "https://i.imgur.com/9BAh5F7.jpeg"
+   ];
   var rd = background[Math.floor(Math.random() * background.length)];
   
   let getAvtmot = (
