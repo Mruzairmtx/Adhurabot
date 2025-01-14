@@ -2,7 +2,7 @@ module.exports.config = {
     name: "punch",
     version: "2.0.0",
     hasPermssion: 0,
-    credits: "Clarence DK",
+    credits: "uzairrajput",
     description: "",
     commandCategory: "img",
     usages: "[@mention]",
@@ -69,6 +69,6 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("tag 1 person", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "👊👊", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
   }
