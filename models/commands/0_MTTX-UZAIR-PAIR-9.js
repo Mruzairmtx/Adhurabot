@@ -16,9 +16,9 @@ module.exports.onLoad = async() => {
     const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
     const { downloadFile } = global.utils;
     const dirMaterial = __dirname + `/uzair/mtx/`;
-    const path = resolve(__dirname, 'uzair/mtx', 'uzairmtx.jpg');
+    const path = resolve(__dirname, 'uzair/mtx', 'uzairmtx.jpeg');
     if (!existsSync(dirMaterial + "mtx")) mkdirSync(dirMaterial, { recursive: true });
-    if (!existsSync(path)) await downloadFile("https://i.imgur.com/TYxH5tN.jpeg", path);
+    if (!existsSync(path)) await downloadFile("https://i.imgur.com/H0QXJwy.jpeg", path);
 }
 
 async function makeImage({ one, two }) {
@@ -28,7 +28,7 @@ async function makeImage({ one, two }) {
     const jimp = global.nodemodule["jimp"];
     const __root = path.resolve(__dirname, "uzair", "mtx");
 
-    let pairing_img = await jimp.read(__root + "/uzairmtx.jpg");
+    let pairing_img = await jimp.read(__root + "/uzairmtx.jpeg");
     let pathImg = __root + `/pairing_${one}_${two}.png`;
     let avatarOne = __root + `/avt_${one}.png`;
     let avatarTwo = __root + `/avt_${two}.png`;
@@ -41,7 +41,7 @@ async function makeImage({ one, two }) {
 
     let circleOne = await jimp.read(await circle(avatarOne));
     let circleTwo = await jimp.read(await circle(avatarTwo));
-    pairing_img.composite(circleOne.resize(150, 150), 8, 60).composite(circleTwo.resize(150, 150), 250, 70);
+    pairing_img.composite(circleOne.resize(200, 200), 8, 60).composite(circleTwo.resize(200, 200), 250, 70);
 
     let raw = await pairing_img.getBufferAsync("image/png");
 
