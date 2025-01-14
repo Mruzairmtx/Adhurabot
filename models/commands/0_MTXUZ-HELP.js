@@ -109,16 +109,16 @@ const first = numberOfOnePage * page - numberOfOnePage;
 
  const text = `◈━━━━━━━━━━━━━━━━💚✨\n\n𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓: 𝑴𝒖𝒉𝒂𝒎𝒎𝒂𝒅 𝑼𝒛𝒂𝒊𝒓 𝑹𝒂𝒋𝒑𝒖𝒕 𝑴𝒕𝒙\n\n◈ ──────────────── 💚✨\n\n𝐌𝐘 𝐎𝐰𝐧𝐞𝐑  𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨.... < 𝐄𝐃𝐈𝐓 > .... 𝐘𝐞 𝐁𝐨𝐓 𝐒𝐢𝐫𝐅 𝐎𝐰𝐧𝐞𝐑 𝐊 𝐋𝐢𝐘𝐞 𝐇 .... 𝐌𝐮𝐣𝐇𝐞 𝐀𝐚𝐏 𝐋𝐨𝐆𝐨 𝐊𝐨 𝐇𝐚𝐬𝐚𝐍𝐞 𝐊 𝐋𝐢𝐘𝐞 𝐁𝐚𝐧𝐘𝐚 𝐆𝐲𝐚 𝐇 𝐓𝐨𝐇 𝐇𝐚𝐩𝐩𝐘 𝐑𝐞𝐇𝐚𝐍𝐀 𝐀𝐩𝐩𝐤𝐚 𝐀𝐩𝐩𝐧𝐚 𝐎𝐰𝐧𝐞𝐑 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨\n\n◈ ──────────────── 💚✨\n\n𝐊𝐢𝐬𝐢 𝐁𝐡𝐢 𝐓𝐚𝐫𝐇𝐚 𝐊𝐢 𝐇𝐞𝐥𝐩 𝐋𝐚𝐧𝐢 𝐇𝐨 𝐌𝐞𝐒𝐒𝐠 𝐊𝐚𝐑𝐞 𝐎𝐰𝐧𝐞𝐫 ➻ 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨\n\n◈ ──────────────── 💚✨\n\n𝐏𝐀𝐆𝐄 (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\n𝑭𝒐𝒓 𝑨𝒍𝒍 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑻𝒚𝒑 𝑯𝒆𝒍𝒑2\n\n◈━━━━━━━━━━━━━━━━💚✨\n\n𝑪𝒓𝒆𝒅𝒊𝒕: 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨`;
   var link = [
-  "https://imgur.com/03ueSvl.jpeg", 
-  "https://imgur.com/03ueSvl.jpeg"
+  "https://i.imgur.com/sLkOHNY.jpeg", 
+  "https://i.imgur.com/sSGAv8V.jpeg"
         ]
        var callback = () => api.sendMessage({ body: siu + "\n\n" + msg  + text, attachment: fs.createReadStream(__dirname + "/cache/leiamnashelp.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashelp.jpg"), event.messageID);
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashelp.jpg")).on("close", () => callback());
     } 
   const leiamname = getText("moduleInfo", command.config.name, command.config.description, `${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits);
 
-    var link = [ "https://imgur.com/03ueSvl.jpeg", 
-    "https://imgur.com/03ueSvl.jpeg"
+    var link = [ "https://i.imgur.com/17bRJD1.jpeg", 
+    "https://i.imgur.com/V3PXweL.jpeg"
     ]
       var callback = () => api.sendMessage({ body: leiamname, attachment: fs.createReadStream(__dirname + "/cache/leiamnashelp.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashelp.jpg"), event.messageID);
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashelp.jpg")).on("close", () => callback());
