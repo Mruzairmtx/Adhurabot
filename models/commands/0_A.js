@@ -1,5 +1,5 @@
 module.exports.config = {
-        name: "pair9",
+        name: "pair11",
         version: "1.0.1",
         hasPermssion: 0,
         credits: "uzairrajput",
@@ -16,7 +16,7 @@ module.exports.onLoad = async() => {
     const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
     const { downloadFile } = global.utils;
     const dirMaterial = __dirname + `/uzair/mtx/`;
-    const path = resolve(__dirname, 'uzair/mtx', 'pairing.png1');
+    const path = resolve(__dirname, 'uzair/mtx', 'uzair.jpeg');
     if (!existsSync(dirMaterial + "mtx")) mkdirSync(dirMaterial, { recursive: true });
     if (!existsSync(path)) await downloadFile("https://i.imgur.com/XCxHjES.jpeg", path);
 }
@@ -28,7 +28,7 @@ async function makeImage({ one, two }) {
     const jimp = global.nodemodule["jimp"];
     const __root = path.resolve(__dirname, "uzair", "mtx");
 
-    let pairing_img = await jimp.read(__root + "/pairing.png1");
+    let pairing_img = await jimp.read(__root + "/uzair.jpeg);
     let pathImg = __root + `/pairing_${one}_${two}.png`;
     let avatarOne = __root + `/avt_${one}.png`;
     let avatarTwo = __root + `/avt_${two}.png`;
