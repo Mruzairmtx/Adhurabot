@@ -2,7 +2,7 @@ module.exports.config = {
     name: "autosetname",
     version: "1.0.1",
     hasPermssion: 1,
-    credits: "uzairrajput",
+    credits: "BLACK",
     description: "Automatic setname for new members",
     commandCategory: "Box Chat",
     usages: "[add <name> /remove] ",
