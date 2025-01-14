@@ -46,14 +46,14 @@ module.exports.run = async ({ api, event }) => {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
   const randomImages = [
-    "https://i.imgur.com/DF3klBT.mp4",
-    "https://i.imgur.com/6ARPc8U.mp4",
+    "https://i.imgur.com/oIQK5CD.jpeg",
+    "https://i.imgur.com/fdYTdAN.jpeg",
 
-"https://i.imgur.com/fJIhulU.mp4",
+"https://i.imgur.com/9OLmJqq.jpeg",
 
-"https://i.imgur.com/AhiZgYP.mp4",
+"https://i.imgur.com/gK4G68J.jpeg",
 
-"https://i.imgur.com/pYPJ7Yt.mp4"
+"https://i.imgur.com/Keh3dXO.jpegn"
 
   ];
 
@@ -79,8 +79,8 @@ module.exports.run = async ({ api, event }) => {
         `❯ Date of birth: 15/10/2005\n` +
         `❯ Instagram: it'xuzair449\n` +
         `❯ Weight: 62\n` +
-        `❯ Facebook: https://www.facebook.com/Mtxuzair\n` +
-        `❯ Thanks for using 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿-𝑴𝑻𝑿 💚✨ bot 🤖.`, event.threadID
+        `❯ Facebook: https://www.facebook.com/profile.php?id=100076277285988\n` +
+        `❯ Thanks for using 𝑴𝒓𝑼𝒛𝒂𝒊𝒓𝑿𝒙𝑿 bot.`, event.threadID
       );
 
       api.removeListener(handleReply);
