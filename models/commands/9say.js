@@ -2,7 +2,7 @@ module.exports.config = {
   name: "sayv2",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "Mirai Team/Modified By Ciel",
+  credits: "uzairrajput",
   description: "Make the bot return google's audio file via text",
   commandCategory: "Song/video",
   usages: "[ru/en/ko/ja/tl] [Text]",
