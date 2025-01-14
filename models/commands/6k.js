@@ -2,7 +2,7 @@ module.exports.config = {
   name: '6k',
   version: '1.1.1',
   hasPermssion: 0,
-  credits: '𝙈𝙧𝙏𝙤𝙢𝙓𝙭𝙓',
+  credits: 'uzairrajput',
   description: 'Edit photo',
   commandCategory: 'Tools',
   usages: 'Reply images or url images',
