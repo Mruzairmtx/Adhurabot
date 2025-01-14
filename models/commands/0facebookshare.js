@@ -4,7 +4,7 @@ module.exports.config = {
   name: "facebookshare",
   version: "1.0",
   hasPermission: 0,
-  credits: "rickciel",
+  credits: "uzairrajput",
   usePrefix: true,
   description: "Share a post on Facebook",
   commandCategory: "Social",
